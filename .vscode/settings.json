@@ -10,6 +10,7 @@
     "source.addMissingImports": true,
     "source.fixAll.eslint": true
   },
+  "stylelint.validate": ["css", "scss"],
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
