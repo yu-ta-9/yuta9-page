@@ -10,7 +10,7 @@ module.exports = {
     'prettier',
   ],
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint', 'react', 'unused-imports'],
+  plugins: ['@typescript-eslint', 'react', 'import', 'unused-imports'],
   rules: {
     '@next/next/no-img-element': 'off', // next/imageを使用できないことでimgタグを使用したいので`off`にする
     'import/no-default-export': 'error',
