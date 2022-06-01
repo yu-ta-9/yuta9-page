@@ -1,7 +1,7 @@
 import 'reset-css';
-// import 'swiper/css';
-// import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
+import 'swiper/scss';
+import 'swiper/scss/navigation';
+import 'swiper/scss/pagination';
 import '../../styles/globals.scss';
 import type { AppProps } from 'next/app';
 
