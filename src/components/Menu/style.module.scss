@@ -1,0 +1,12 @@
+@use '~/styles/variables.module.scss';
+
+.menu-wrapper {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 50%;
+
+  > .menu {
+    font-size: variables.$font-size-normal;
+    cursor: pointer;
+  }
+}

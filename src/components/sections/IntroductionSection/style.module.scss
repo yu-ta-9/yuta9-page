@@ -1,0 +1,34 @@
+@use '~/styles/variables.module.scss';
+
+.section-introduction {
+  display: flex;
+  gap: 24px;
+  justify-content: space-around;
+  width: 100%;
+  padding: 32px;
+  background-color: variables.$color-secondary;
+
+  > .profile {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 50%;
+  }
+
+  > .profile > .icon {
+    text-align: center;
+  }
+
+  > .profile > .introduction {
+    padding: 24px;
+    font-size: variables.$font-size-normal;
+    line-height: variables.$line-height;
+    color: variables.$color-text-black;
+  }
+
+  > .graph {
+    display: flex;
+    align-items: center;
+    max-width: 50%;
+  }
+}
