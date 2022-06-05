@@ -1,5 +1,6 @@
 declare namespace NodeJS {
-  type ProcessEnv = {
-    readonly API_KEY: string;
+  // eslint-disable-next-line @typescript-eslint/consistent-type-definitions
+  interface ProcessEnv {
+    readonly NEXT_PUBLIC_API_KEY: string;
   }
 }
