@@ -1,0 +1,29 @@
+/* color */
+$color-main: #97ffe6;
+$color-secondary: #f7e399;
+$color-third: #fffdd9;
+$color-white: #fff;
+$color-text-black: #304556;
+
+/* font-size */
+$font-size-h1: 48px;
+$font-size-h2: 36px;
+$font-size-h3: 24px;
+$font-size-normal: 16px;
+
+/* font-weight */
+$font-weight-bold: 900;
+
+/* line-height */
+$line-height: 1.7;
+
+/* stylelint-disable property-no-unknown */
+/* stylelint-disable property-case */
+/* stylelint-disable selector-pseudo-class-no-unknown */
+:export {
+  colorSecondary: $color-secondary;
+  colorThird: $color-third;
+}
+/* stylelint-enable property-no-unknown */
+/* stylelint-enable property-case */
+/* stylelint-enable selector-pseudo-class-no-unknown */
