@@ -26,7 +26,7 @@ export const WorkSection: React.FC = () => {
   }, []);
 
   return (
-    <section className={styles['section-work']}>
+    <section id='work' className={styles['section-work']}>
       <Slide
         slides={data.map((e) => (
           <iframe

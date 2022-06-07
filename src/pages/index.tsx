@@ -19,7 +19,7 @@ const Home: NextPage = () => {
       <Header />
       <main className={styles['main']}>
         {SECTIONS.map((section, i) => (
-          <SectionTemplate key={i} title={section.title} bgColor={section.bgColor}>
+          <SectionTemplate key={i} section={section.section} title={section.title} bgColor={section.bgColor}>
             {section.content}
           </SectionTemplate>
         ))}

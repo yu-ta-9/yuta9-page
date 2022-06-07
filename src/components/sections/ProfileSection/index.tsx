@@ -8,7 +8,7 @@ import styles from './style.module.scss';
 
 import { Slide } from '../../Slide';
 
-export const IntroductionSection: React.FC = () => {
+export const ProfileSection: React.FC = () => {
   ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend);
 
   const data = {
@@ -53,7 +53,7 @@ export const IntroductionSection: React.FC = () => {
   };
 
   return (
-    <section className={styles['section-introduction']}>
+    <section className={styles['section-profile']}>
       <div className={styles['profile']}>
         <div className={styles['icon']}>
           <Image
