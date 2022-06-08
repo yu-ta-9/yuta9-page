@@ -1,57 +1,13 @@
 // TODO: 消したい
 /* eslint-disable react/jsx-key */
-import { Chart as ChartJS, RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend } from 'chart.js';
 import Image from 'next/image';
-import { Radar } from 'react-chartjs-2';
 
+import { SkillSlide } from './SkillSlide';
 import styles from './style.module.scss';
 
 import { Slide } from '../../Slide';
 
 export const ProfileSection: React.FC = () => {
-  ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend);
-
-  const data = {
-    labels: ['Front End', 'Back End', 'Infrastructure'],
-    datasets: [
-      {
-        label: 'Skill',
-        data: [4, 3, 2],
-        backgroundColor: '#97ffe633',
-        borderColor: '#97ffe6',
-        borderWidth: 1,
-        borderDashOffset: 1,
-      },
-    ],
-  };
-
-  const options = {
-    responsive: true,
-    plugins: {
-      legend: {
-        labels: {
-          font: {
-            size: 12,
-          },
-        },
-      },
-      tooltip: {
-        padding: 16,
-      },
-    },
-    scales: {
-      r: {
-        suggestedMin: 0,
-        suggestedMax: 5,
-        beginAtZero: true,
-        ticks: {
-          display: false,
-          count: 5,
-        },
-      },
-    },
-  };
-
   return (
     <section className={styles['section-profile']}>
       <div className={styles['profile']}>
@@ -73,7 +29,7 @@ export const ProfileSection: React.FC = () => {
         </p>
       </div>
       <div className={styles['graph']}>
-        <Slide slides={[<Radar data={data} options={options} />]} />
+        <Slide slides={[<SkillSlide />]} />
       </div>
     </section>
   );
