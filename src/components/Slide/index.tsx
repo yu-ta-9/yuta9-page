@@ -1,4 +1,4 @@
-import { Keyboard, Pagination, Navigation } from 'swiper';
+import { Keyboard, Pagination, Navigation, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import styles from './style.module.scss';
@@ -18,7 +18,8 @@ export const Slide: React.FC<Props> = ({ slides }) => {
       scrollbar={{ draggable: true }}
       onSlideChange={(_swiper): void => console.log('slide change')}
       onSwiper={(swiper): void => console.log(swiper)}
-      modules={[Keyboard, Pagination, Navigation]}
+      autoplay={{ delay: 5000 }}
+      modules={[Keyboard, Pagination, Navigation, Autoplay]}
     >
       {slides.map((e, i) => (
         <SwiperSlide key={i} className={styles['slide']}>
