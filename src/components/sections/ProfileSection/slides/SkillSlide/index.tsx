@@ -3,7 +3,7 @@ import { Radar } from 'react-chartjs-2';
 
 import type { ChartOptions, ChartData } from 'chart.js';
 
-import variables from '../../../../../styles/variables.module.scss';
+import variables from '../../../../../../styles/variables.module.scss';
 
 export const SkillSlide: React.FC = () => {
   ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend);
@@ -31,6 +31,7 @@ export const SkillSlide: React.FC = () => {
     },
     plugins: {
       legend: {
+        display: false,
         onClick: (): void => {
           return;
         },

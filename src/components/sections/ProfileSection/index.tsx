@@ -1,8 +1,7 @@
-// TODO: 消したい
-/* eslint-disable react/jsx-key */
 import Image from 'next/image';
 
-import { SkillSlide } from './SkillSlide';
+import { SLIDES } from './slides/slides';
+import { SlideTemplate } from './slides/SlideTemplate';
 import styles from './style.module.scss';
 
 import { Slide } from '../../Slide';
@@ -29,7 +28,13 @@ export const ProfileSection: React.FC = () => {
         </p>
       </div>
       <div className={styles['graph']}>
-        <Slide slides={[<SkillSlide />]} />
+        <Slide
+          slides={SLIDES.map((slide, i) => (
+            <SlideTemplate key={i} title={slide.title}>
+              {slide.content}
+            </SlideTemplate>
+          ))}
+        />
       </div>
     </section>
   );

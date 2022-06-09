@@ -1,0 +1,19 @@
+@use '~/styles/variables.module.scss';
+
+.slide-template {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+
+  > .title {
+    font-size: variables.$font-size-h3;
+    color: variables.$color-text-black;
+  }
+
+  > .content {
+    // MEMO: flexBoxにjustify-selfは効かないのでauto marginで対応
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
