@@ -21,8 +21,10 @@ $line-height: 1.7;
 /* stylelint-disable property-case */
 /* stylelint-disable selector-pseudo-class-no-unknown */
 :export {
+  colorMain: $color-main;
   colorSecondary: $color-secondary;
   colorThird: $color-third;
+  colorTextBlack: $color-text-black;
 }
 /* stylelint-enable property-no-unknown */
 /* stylelint-enable property-case */
