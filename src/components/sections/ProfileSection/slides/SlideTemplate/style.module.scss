@@ -12,6 +12,8 @@
   }
 
   > .content {
+    padding: 0 48px;
+
     // MEMO: flexBoxにjustify-selfは効かないのでauto marginで対応
     margin-top: auto;
     margin-bottom: auto;
