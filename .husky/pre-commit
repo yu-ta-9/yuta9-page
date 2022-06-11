@@ -1,0 +1,7 @@
+# $0 is this File
+"$(dirname "$0")/_/husky.sh"
+
+# test
+yarn lint:js
+yarn lint:css
+yarn ts-test
