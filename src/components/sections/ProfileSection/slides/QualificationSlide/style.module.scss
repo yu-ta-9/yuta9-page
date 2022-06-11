@@ -6,6 +6,11 @@
     align-items: start;
     color: variables.$color-text-black;
 
+    &:hover {
+      font-weight: variables.$font-weight-middle-bold;
+      cursor: pointer;
+    }
+
     &:not(:first-child) {
       margin-top: 16px;
     }

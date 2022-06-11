@@ -31,7 +31,9 @@ const LISTS: List[] = [
   {
     name: (
       <>
-        AWS Certified SysOps Administrator – Associate (SOA-C01)
+        AWS Certified SysOps Administrator – Associate
+        <br />
+        (SOA-C01)
         <br />
         (since 2021/4/22)
       </>
