@@ -10,11 +10,11 @@ export const ProfileSection: React.FC = () => {
   return (
     <section className={styles['section-profile']}>
       <div className={styles['profile']}>
-        <div className={styles['icon']}>
+        <div className={styles['icon']} onContextMenu={(e): void => e.preventDefault()}>
           <Image
             className={styles['image']}
             style={{ borderRadius: '50%' }}
-            src='/images/img_my_icon_dummy.png'
+            src='https://images.microcms-assets.io/assets/a1b28fd0a35f479d93199c3aae3b5a39/f1a0b4aeead74124b1c88bd7de594a2a/my_icon.jpg?q=100'
             alt='my icon'
             width={200}
             height={200}
