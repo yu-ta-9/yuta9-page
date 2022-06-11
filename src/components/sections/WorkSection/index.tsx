@@ -1,36 +1,15 @@
-import { useEffect, useState } from 'react';
-
 import styles from './style.module.scss';
 
-import { client } from '../../../libs/client';
+import data from '../../../../data/works.json';
 import { Slide } from '../../Slide';
 
-type Data = {
-  title: string;
-  url: string;
-  id: string;
-  createdAt: string;
-  updatedAt: string;
-  publishedAt: string;
-  revisedAt: string;
-};
-
 export const WorkSection: React.FC = () => {
-  const [data, setData] = useState<Data[]>([]);
-
-  useEffect(() => {
-    (async (): Promise<void> => {
-      const data = await client.getList({ endpoint: 'works' });
-      setData(data.contents);
-    })();
-  }, []);
-
   return (
     <section id='work' className={styles['section-work']}>
       <Slide
-        slides={data.map((e) => (
+        slides={data.map((e, i) => (
           <iframe
-            key={e.id}
+            key={i}
             width='560'
             height='315'
             src={e.url}
