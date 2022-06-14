@@ -1,0 +1,17 @@
+$sp: 768px;
+
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+/* stylelint-disable property-no-unknown */
+/* stylelint-disable property-case */
+/* stylelint-disable selector-pseudo-class-no-unknown */
+:export {
+  spWidth: $sp;
+}
+/* stylelint-enable property-no-unknown */
+/* stylelint-enable property-case */
+/* stylelint-enable selector-pseudo-class-no-unknown */
