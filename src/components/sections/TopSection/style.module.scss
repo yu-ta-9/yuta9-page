@@ -1,4 +1,5 @@
-@use '../../../../styles/variables.module.scss';
+@use '~/styles/variables.module.scss';
+@use '~/styles/mixins.module.scss' as m;
 
 .section-top {
   position: relative;
@@ -12,6 +13,11 @@
     align-items: center;
     width: 100%;
     height: 100%;
+
+    @include m.sp {
+      align-items: end;
+      justify-content: center;
+    }
   }
 
   > .wrapper > .heading {
@@ -20,6 +26,12 @@
     font-weight: variables.$font-weight-bold;
     color: variables.$color-white;
     letter-spacing: 24px;
+
+    @include m.sp {
+      margin-bottom: 64px;
+      margin-left: 0;
+      letter-spacing: 12px;
+    }
   }
 
   > .wrapper > .bg {
