@@ -1,8 +1,10 @@
 @use '~/styles/variables.module.scss';
+@use '~/styles/mixins.module.scss' as m;
 
 .section-profile {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 32px;
   justify-content: space-around;
   width: 100%;
   padding: 32px;
@@ -12,7 +14,11 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    max-width: 50%;
+    width: calc(50% - 16px);
+
+    @include m.sp {
+      width: 100%;
+    }
   }
 
   > .profile > .icon {
@@ -29,6 +35,10 @@
   > .graph {
     display: flex;
     align-items: center;
-    max-width: 50%;
+    width: calc(50% - 16px);
+
+    @include m.sp {
+      width: 100%;
+    }
   }
 }

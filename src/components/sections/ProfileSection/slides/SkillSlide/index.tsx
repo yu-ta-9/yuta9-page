@@ -24,6 +24,7 @@ export const SkillSlide: React.FC = () => {
 
   const options: ChartOptions<'radar'> = {
     responsive: true,
+    maintainAspectRatio: false,
     layout: {
       padding: {
         bottom: -20,
@@ -67,7 +68,7 @@ export const SkillSlide: React.FC = () => {
   // TODO: 設計検討
   return (
     <div style={{ maxHeight: '400px' }}>
-      <Radar height={400} width={400} data={data} options={options} />{' '}
+      <Radar data={data} options={options} />
     </div>
   );
 };
