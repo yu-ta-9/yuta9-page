@@ -20,12 +20,13 @@ export const ProfileSection: React.FC = () => {
             height={200}
           />
         </div>
-        <p className={styles['introduction']}>
-          情報系大学を卒業後、一部上場IT企業、ベンチャーSES企業を経て現在、自社開発企業のWEBエンジニアとして従事。
-          <br />
-          社会に爪痕を残せるWEBサービスを創造するため、日々フルスタックに色々な技術を学んでいる。 <br />
-          趣味： ドラムなどの楽器演奏、音楽ライブ、ジム通い
-        </p>
+        <div className={styles['introduction']}>
+          <p className={styles['paragraph']}>
+            情報系大学卒→一部上場IT→ベンチャーSES→チームラボ→ベーシックのSaasエンジニア。
+          </p>
+          <p className={styles['paragraph']}>何か面白いモノを作ることにモチベ沸いたりします。</p>
+          <p className={styles['paragraph']}>趣味： ドラムなどの楽器演奏、音楽ライブ、ジム通い</p>
+        </div>
       </div>
       <div className={styles['graph']}>
         <Slide
