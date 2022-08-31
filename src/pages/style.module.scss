@@ -1,6 +1,9 @@
 @use '~/styles/mixins.module.scss' as m;
 
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 0 32px;
 
   @include m.sp {
@@ -13,5 +16,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 1024px;
   }
 }
