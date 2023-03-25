@@ -1,0 +1,27 @@
+.locale-dropdown {
+  position: relative;
+
+  > .button {
+    font-size: 18px;
+    line-height: 23px;
+    color: #fff;
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+
+  > .dropdown {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    width: 100%;
+  }
+
+  > .dropdown > .menu > .list {
+    font-size: 18px;
+    line-height: 23px;
+    color: #fff;
+    text-align: center;
+    border: #fff solid 1px;
+  }
+}

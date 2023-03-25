@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 import styles from './style.module.scss';
 
-import { useDevice } from '../../../hooks/device';
+import { useDevice } from '../../../hooks/useDevice';
 
 export const TopSection: React.FC = () => {
   const isSp = useDevice();

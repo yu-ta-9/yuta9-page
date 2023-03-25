@@ -1,9 +1,17 @@
+/* stylelint-disable font-family-name-quotes */
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+
 $sp: 768px;
 
 @mixin sp {
   @media (max-width: ($sp)) {
     @content;
   }
+}
+
+@mixin title {
+  font-family: 'Ubuntu';
+  font-style: normal;
 }
 
 /* stylelint-disable property-no-unknown */

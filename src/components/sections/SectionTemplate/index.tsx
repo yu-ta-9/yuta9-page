@@ -9,6 +9,7 @@ type Props = {
   bgColor?: string;
 };
 
+// TODO: react-scrollは不要かも
 export const SectionTemplate: React.FC<Props> = ({ children, section, title, bgColor }) => {
   return (
     <Element
