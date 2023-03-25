@@ -1,0 +1,31 @@
+@use '~/styles/variables.module.scss' as v;
+@use '~/styles/mixins.module.scss' as m;
+
+.section-top {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  > .video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  > .title {
+    @include m.title;
+
+    position: absolute;
+    top: 50%;
+    left: 160px;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 76px;
+    color: #fff;
+    transform: translateY(-50%);
+  }
+}
