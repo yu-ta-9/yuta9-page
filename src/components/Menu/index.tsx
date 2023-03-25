@@ -7,7 +7,7 @@ import { MenuArea } from './MenuArea';
 import { MENU } from './menus';
 import styles from './style.module.scss';
 
-import { useDevice } from '../../hooks/device';
+import { useDevice } from '../../hooks/useDevice';
 import { MenuButton } from '../MenuButton';
 
 type Props = Record<string, unknown>;
