@@ -29,3 +29,44 @@
     transform: translateY(-50%);
   }
 }
+
+@keyframes stretch {
+  from {
+    left: -100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+.scroll-bar {
+  position: absolute;
+  right: 52px;
+  bottom: 0;
+  font-size: 13.3029px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #fff;
+  transform: rotate(90deg);
+  transform-origin: right top;
+
+  > .wrapper {
+    position: relative;
+    width: 164px;
+    height: 2px;
+    margin-top: 8px;
+    overflow: hidden;
+    background-color: #d9d9d9;
+  }
+
+  > .wrapper > .bar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    animation: stretch 2s infinite;
+    animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  }
+}

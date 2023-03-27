@@ -6,11 +6,19 @@ export const TopSection: FC = () => {
   return (
     <section className={styles['section-top']}>
       <video className={styles['video']} src='/videos/sample_video.mp4' autoPlay loop muted></video>
+
       <h1 className={styles['title']}>
         YU-TA-9
         <br />
         portfolio site
       </h1>
+
+      <div className={styles['scroll-bar']}>
+        <span>scroll</span>
+        <div className={styles['wrapper']}>
+          <div className={styles['bar']}></div>
+        </div>
+      </div>
     </section>
   );
 };
