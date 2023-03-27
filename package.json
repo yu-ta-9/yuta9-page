@@ -11,7 +11,8 @@
     "lint:js": "eslint **/*.{ts,tsx}",
     "lint:js:fix": "eslint --fix **/*.{ts,tsx}",
     "lint:css": "stylelint **/*.{css,scss,sass}",
-    "ts-test": "tsc --noEmit"
+    "ts-test": "tsc --noEmit",
+    "icons": "npx @svgr/cli --no-index -d src/components/icons public/icons"
   },
   "dependencies": {
     "add": "^2.0.6",
@@ -32,6 +33,7 @@
     "yarn": "^1.22.19"
   },
   "devDependencies": {
+    "@svgr/cli": "^7.0.0",
     "@types/chart.js": "^2.9.37",
     "@types/node": "18.15.5",
     "@types/react": "18.0.8",

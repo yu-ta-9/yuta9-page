@@ -24,7 +24,7 @@
     "**/node_modules": true,
     "**/yarn.lock": true
   },
-  "cSpell.words": [],
+  "cSpell.words": ["Toeic"],
   "peacock.color": "#64FFDA",
   "workbench.colorCustomizations": {
     "activityBar.activeBackground": "#97ffe6",
@@ -46,7 +46,5 @@
     "titleBar.inactiveForeground": "#15202b99",
     "commandCenter.border": "#15202b99"
   },
-  "i18n-ally.localesPaths": [
-    "public/locales"
-  ]
+  "i18n-ally.localesPaths": ["public/locales"]
 }
