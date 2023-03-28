@@ -1,7 +1,8 @@
 import type { FC } from 'react';
 
 import { Header } from './Header';
-import { SECTIONS } from './sections/const';
+import { AboutSection } from './sections/AboutSection';
+import { TopSection } from './sections/TopSection';
 
 import { Footer } from '../../Footer';
 
@@ -9,7 +10,10 @@ export const V2: FC = () => {
   return (
     <>
       <Header />
-      <main>{SECTIONS.map((section) => section.content)}</main>
+      <main>
+        <TopSection />
+        <AboutSection />
+      </main>
       <Footer />
     </>
   );
