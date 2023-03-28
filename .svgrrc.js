@@ -12,7 +12,7 @@ module.exports = {
 
     import type { Ref, SVGProps } from 'react';
 
-    const ${deleteSvgName} = (${variables.props}) => (
+    const ${deleteSvgName} = (${variables.props}): JSX.Element => (
       ${variables.jsx}
     );
 
