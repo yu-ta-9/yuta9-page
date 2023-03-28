@@ -5,6 +5,7 @@ import type { FC } from 'react';
 import styles from './style.module.scss';
 
 import { useOutsideClick } from '../../../../../hooks/useOutsideClick';
+import { IconGlobal } from '../../../../icons/Global';
 
 export const LocaleDropdown: FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,9 @@ export const LocaleDropdown: FC = () => {
   return (
     <div className={styles['locale-dropdown']} ref={ref}>
       <button className={styles['button']} onClick={openTooltip}>
-        Ja↓
+        <IconGlobal width={14} height={14} />
+        Ja
+        <span className={styles['arrow']}></span>
       </button>
       {isOpen && (
         <div role='tooltip' className={styles['dropdown']}>

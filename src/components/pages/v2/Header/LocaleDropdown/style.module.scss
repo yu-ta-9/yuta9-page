@@ -2,12 +2,23 @@
   position: relative;
 
   > .button {
+    display: flex;
+    gap: 2px;
+    align-items: center;
     font-size: 18px;
     line-height: 23px;
     color: #fff;
     cursor: pointer;
     background: none;
     border: none;
+  }
+
+  > .button > .arrow {
+    width: 0;
+    height: 0;
+    border-top: 5px solid #fff;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
   }
 
   > .dropdown {
