@@ -14,6 +14,11 @@ $sp: 768px;
   font-style: normal;
 }
 
+@mixin menu {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+}
+
 /* stylelint-disable property-no-unknown */
 /* stylelint-disable property-case */
 /* stylelint-disable selector-pseudo-class-no-unknown */
