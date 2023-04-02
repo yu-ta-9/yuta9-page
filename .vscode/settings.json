@@ -24,7 +24,7 @@
     "**/node_modules": true,
     "**/yarn.lock": true
   },
-  "cSpell.words": ["Toeic"],
+  "cSpell.words": ["Toeic", "Zenn", "Qiita"],
   "peacock.color": "#64FFDA",
   "workbench.colorCustomizations": {
     "activityBar.activeBackground": "#97ffe6",
