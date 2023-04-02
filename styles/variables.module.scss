@@ -7,8 +7,8 @@ $color-text-black: #304556;
 
 /* v2 */
 $color-main-v2: #01ff76;
-$color-base: #494949;
-$color-base-second: #0d0d0d;
+$color-base-primary: #494949;
+$color-base-secondary: #0d0d0d;
 $color-text: #fff;
 
 /* font-size */
@@ -26,6 +26,8 @@ $line-height: 1.7;
 
 /* z-index */
 $z-index-header-menu: 1000;
+$z-index-about-contents: 10;
+$z-index-about-image: 15;
 
 /* stylelint-disable property-no-unknown */
 /* stylelint-disable property-case */

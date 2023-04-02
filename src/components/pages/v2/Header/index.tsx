@@ -8,13 +8,19 @@ export const Header: FC = () => {
     <header className={styles['header-container']}>
       <ul className={styles['menu']}>
         <li className={styles['list']}>
-          <span className={styles['text']}>ABOUT</span>
+          <a className={styles['text']} href='#about'>
+            ABOUT
+          </a>
         </li>
         <li className={styles['list']}>
-          <span className={styles['text']}>SKILL</span>
+          <a className={styles['text']} href='#skill'>
+            SKILL
+          </a>
         </li>
         <li className={styles['list']}>
-          <span className={styles['text']}>WORKS</span>
+          <a className={styles['text']} href='#works'>
+            WORKS
+          </a>
         </li>
         <li>
           <LocaleDropdown />

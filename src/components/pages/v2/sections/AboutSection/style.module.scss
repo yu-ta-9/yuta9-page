@@ -1,42 +1,27 @@
 @use '~/styles/variables.module.scss' as v;
 @use '~/styles/mixins.module.scss' as m;
 
-.section-about {
+.about-wrapper {
   position: relative;
-  width: 100vw;
-  height: 100vh;
-  padding: 62px 48px;
-  background-color: #494949;
+  flex: 1;
 
-  > .header {
-    @include m.title;
-
-    top: 422px;
-    left: 48px;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 37px;
-    color: #fff;
-    letter-spacing: 0.07em;
-  }
-
-  > .contents {
+  > .about {
     position: absolute;
-    right: 48px;
-    bottom: 62px;
+    right: 0;
+    bottom: 0;
+    z-index: v.$z-index-about-contents;
     width: 725px;
     padding: 74px 100px;
     background: linear-gradient(270deg, rgb(1 255 118 / 72%) 0%, rgb(1 255 118 / 0%) 100%);
   }
 
-  > .contents > .section {
+  > .about > .section {
     &:not(:first-child) {
       margin-top: 42px;
     }
   }
 
-  > .contents > .section > .title {
+  > .about > .section > .title {
     @include m.title;
 
     font-size: 28px;
@@ -46,7 +31,7 @@
     color: #fff;
   }
 
-  > .contents > .section > .description {
+  > .about > .section > .description {
     margin-top: 8px;
     font-size: 18px;
     font-weight: 400;
@@ -54,7 +39,7 @@
     color: #fff;
   }
 
-  > .contents > .section > .links {
+  > .about > .section > .links {
     display: flex;
     gap: 16px;
     align-items: center;
@@ -64,11 +49,40 @@
 
   > .image {
     position: absolute;
-    top: 50%;
-    left: 48px;
+    top: 0;
+    left: 0;
+    z-index: v.$z-index-about-image;
     width: 240px;
     height: 320px;
     filter: drop-shadow(0 10.6232px 11.2481px rgb(0 0 0 / 25%));
-    transform: translateY(-50%);
+  }
+}
+
+.certification-wrapper {
+  margin-top: auto;
+
+  > .title {
+    @include m.title;
+
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    color: #fff;
+  }
+
+  > .list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 16px;
+  }
+
+  > .list > .item {
+    padding-bottom: 8px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    border-bottom: 1px solid v.$color-main-v2;
   }
 }

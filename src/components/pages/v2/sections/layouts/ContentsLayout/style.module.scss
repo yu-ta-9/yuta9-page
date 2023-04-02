@@ -1,0 +1,42 @@
+@use '~/styles/variables.module.scss' as v;
+@use '~/styles/mixins.module.scss' as m;
+
+.contents-layout {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  padding: 112px 48px;
+
+  &.-theme-primary {
+    background-color: v.$color-base-primary;
+  }
+
+  &.-theme-secondary {
+    background-color: #3a3a3a;
+  }
+
+  > .header {
+    @include m.title;
+
+    top: 422px;
+    left: 48px;
+    width: 200px;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 37px;
+    color: #fff;
+    letter-spacing: 0.07em;
+    transform: translate(0%, 25%) rotate(-90deg);
+    transform-origin: left top;
+  }
+
+  > .contents {
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    max-width: 1120px;
+  }
+}
