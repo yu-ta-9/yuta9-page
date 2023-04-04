@@ -14,26 +14,27 @@ export const AboutSection: FC = () => {
         <img className={styles['image']} src='/images/sample_profile.png' alt='profile' />
 
         <div className={styles['about']}>
-          <section className={styles['section']}>
-            <h3 className={styles['title']}>Profile</h3>
-            <p className={styles['description']}>
-              はじめまして、私はエンジニアの〇〇です。主に〇〇の開発に携わっており、〇〇を得意としています。趣味は〇〇で、〇〇にも興味があります。どうぞよろしくお願いいたします。ここにテキストが入ります。
-            </p>
-            <div className={styles['links']}>
-              <a href='https://twitter.com/yuta9_drumming' target='_blank' rel='noreferrer'>
-                <IconTwitter width={24} height={24} />
-              </a>
-              <a href='https://github.com/yu-ta-9' target='_blank' rel='noreferrer'>
-                <IconGithub width={24} height={24} />
-              </a>
-              <a href='https://zenn.dev/yu_ta_9' target='_blank' rel='noreferrer'>
-                <IconZenn width={24} height={24} />
-              </a>
-              <a href='https://qiita.com/YU-TA-9' target='_blank' rel='noreferrer'>
-                <IconQiita width={24} height={24} />
-              </a>
-            </div>
-          </section>
+          <h3 className={styles['title']}>Profile</h3>
+          <p className={styles['description']}>
+            情報系大学卒→一部上場IT→ベンチャーSES→チームラボ→ベーシックのSaasエンジニア。
+            何か面白いモノを作ることにモチベ沸きます。
+            <br />
+            趣味： 楽器演奏（ドラムなど）、音楽ライブ、ジム通い
+          </p>
+          <div className={styles['links']}>
+            <a href='https://twitter.com/yuta9_drumming' target='_blank' rel='noreferrer'>
+              <IconTwitter width={24} height={24} />
+            </a>
+            <a href='https://github.com/yu-ta-9' target='_blank' rel='noreferrer'>
+              <IconGithub width={24} height={24} />
+            </a>
+            <a href='https://zenn.dev/yu_ta_9' target='_blank' rel='noreferrer'>
+              <IconZenn width={24} height={24} />
+            </a>
+            <a href='https://qiita.com/YU-TA-9' target='_blank' rel='noreferrer'>
+              <IconQiita width={24} height={24} />
+            </a>
+          </div>
         </div>
       </div>
 

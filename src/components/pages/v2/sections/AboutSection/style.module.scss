@@ -6,22 +6,15 @@
   flex: 1;
 
   > .about {
-    position: absolute;
-    right: 0;
-    bottom: 0;
     z-index: v.$z-index-about-contents;
     width: 725px;
     padding: 74px 100px;
+    margin-top: 120px;
+    margin-left: auto;
     background: linear-gradient(270deg, rgb(1 255 118 / 72%) 0%, rgb(1 255 118 / 0%) 100%);
   }
 
-  > .about > .section {
-    &:not(:first-child) {
-      margin-top: 42px;
-    }
-  }
-
-  > .about > .section > .title {
+  > .about > .title {
     @include m.title;
 
     font-size: 28px;
@@ -31,7 +24,7 @@
     color: #fff;
   }
 
-  > .about > .section > .description {
+  > .about > .description {
     margin-top: 8px;
     font-size: 18px;
     font-weight: 400;
@@ -39,7 +32,7 @@
     color: #fff;
   }
 
-  > .about > .section > .links {
+  > .about > .links {
     display: flex;
     gap: 16px;
     align-items: center;
@@ -59,7 +52,7 @@
 }
 
 .certification-wrapper {
-  margin-top: auto;
+  margin-top: 37px;
 
   > .title {
     @include m.title;
