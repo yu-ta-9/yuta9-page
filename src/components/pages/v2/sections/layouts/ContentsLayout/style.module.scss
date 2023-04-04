@@ -5,8 +5,7 @@
   position: relative;
   display: flex;
   width: 100vw;
-  height: 100vh;
-  padding: 112px 48px;
+  padding: 270px 48px;
 
   &.-theme-primary {
     background-color: v.$color-base-primary;
@@ -16,20 +15,22 @@
     background-color: #3a3a3a;
   }
 
-  > .header {
+  > .wrapper {
+    width: 234px;
+  }
+
+  > .wrapper > .header {
     @include m.title;
 
-    top: 422px;
-    left: 48px;
-    width: 200px;
+    display: inline-block;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: 37px;
-    color: #fff;
+    color: v.$color-text;
     letter-spacing: 0.07em;
-    transform: translate(0%, 25%) rotate(-90deg);
-    transform-origin: left top;
+    transform: translate(-100%, 0%) rotate(-90deg);
+    transform-origin: right top;
   }
 
   > .contents {

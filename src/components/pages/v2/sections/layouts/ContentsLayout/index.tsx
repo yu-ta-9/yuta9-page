@@ -20,7 +20,9 @@ export const ContentsLayout: FC<Props> = ({ id, heading, children, theme = 'prim
         styles[`${theme === 'primary' ? '-theme-primary' : '-theme-secondary'}`],
       )}
     >
-      <h2 className={styles['header']}>{heading}</h2>
+      <div className={styles['wrapper']}>
+        <h2 className={styles['header']}>{heading}</h2>
+      </div>
       <div className={styles['contents']}>{children}</div>
     </section>
   );
