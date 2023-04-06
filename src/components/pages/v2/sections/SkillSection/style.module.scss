@@ -1,3 +1,84 @@
+@use '~/styles/variables.module.scss' as v;
+
+@mixin bar {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 325px;
+  padding-bottom: 32px;
+  cursor: pointer;
+}
+
 .section-skill {
-  display: block;
+  > .graph {
+    position: relative;
+    display: flex;
+    gap: 16px;
+    align-items: flex-end;
+    padding: 0 40px;
+  }
+
+  > .graph > .frontend {
+    @include bar;
+
+    height: 413px;
+    background-color: #bf5c5c;
+  }
+
+  > .graph > .backend {
+    @include bar;
+
+    height: 324px;
+    background-color: #5c94bf;
+  }
+
+  > .graph > .infrastructure {
+    @include bar;
+
+    height: 271px;
+    background-color: #8251a8;
+  }
+
+  > .graph > .other {
+    @include bar;
+
+    height: 120px;
+    background-color: #588c43;
+  }
+
+  > .graph > .axis {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+
+    &.-origin {
+      bottom: 0;
+      border-top: 1px solid v.$color-main-v2;
+    }
+
+    &.-first {
+      bottom: 30%;
+      border-top: 1px dotted v.$color-main-v2;
+    }
+
+    &.-second {
+      bottom: 60%;
+      border-top: 1px dotted v.$color-main-v2;
+    }
+
+    &.-third {
+      bottom: 90%;
+      border-top: 1px dotted v.$color-main-v2;
+    }
+  }
+
+  > .description {
+    margin-top: 16px;
+    font-size: 18px;
+  }
 }
