@@ -17,7 +17,7 @@ const getDescription = (stack: Stack): string => {
     case 'infrastructure':
       return 'AWS / Terraform';
     case 'other':
-      return 'git / slack / sentry / rollbar';
+      return 'git / Slack / Sentry / Rollbar / Google Tools / Notion / Backlog / Asana';
   }
 };
 
