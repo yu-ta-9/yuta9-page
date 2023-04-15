@@ -1,3 +1,15 @@
+@keyframes fade-in {
+  from {
+    top: 0;
+    opacity: 0;
+  }
+
+  to {
+    top: calc(100% - 4px);
+    opacity: 1;
+  }
+}
+
 .locale-dropdown {
   position: relative;
 
@@ -26,6 +38,7 @@
     top: calc(100% + 4px);
     left: 0;
     width: 100%;
+    animation: fade-in 0.1s ease-in;
   }
 
   > .dropdown > .menu > .list {
