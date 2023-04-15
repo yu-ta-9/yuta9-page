@@ -11,28 +11,22 @@
   background-color: v.$color-base-secondary;
 
   > .heading {
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  > .heading > .text {
     flex: 1;
     justify-self: flex-start;
     font-size: 33.26px;
     font-weight: 700;
   }
 
-  > .links {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
-
-  > .links > .link {
-    @include m.menu;
-  }
-
-  > .links > .link > .text {
-    font-size: 18px;
+  > .heading > .author {
+    font-size: 16px;
     font-weight: 400;
-    color: v.$color-text;
-    text-decoration: underline;
-    cursor: pointer;
   }
 
   > .go {
