@@ -1,3 +1,92 @@
+@use '~/styles/variables.module.scss' as v;
+
 .section-works {
-  display: block;
+  display: flex;
+  gap: 54px;
+
+  > .navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  > .navbar > .item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &::before {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+      content: '';
+      background-color: v.$color-main-v2;
+      border-radius: 50%;
+    }
+
+    &.-focus::before {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin-right: 10px;
+      margin-left: 2px;
+      background-color: transparent;
+      border-radius: 50%;
+      box-shadow: 0 0 0 2px v.$color-main-v2;
+      animation: show 0.3s ease-in;
+    }
+  }
+
+  > .navbar > .item > .circle {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    background-color: v.$color-main-v2;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px v.$color-main-v2;
+  }
+
+  > .navbar > .item.-focus > .circle {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px v.$color-main-v2;
+  }
+
+  > .navbar > .item > .number {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+  }
+
+  > .navbar > .connector {
+    display: block;
+    width: 4px;
+    height: 20px;
+    margin: -18px 0 -18px 6px;
+    background-color: v.$color-main-v2;
+  }
+
+  > .contents {
+    flex: 1;
+
+    // MEMO: 指定しないとswiperが上手く横幅を定めてくれない
+    min-width: 0;
+  }
+}
+
+@keyframes show {
+  from {
+    background-color: v.$color-main-v2;
+  }
+
+  to {
+    background-color: transparent;
+  }
 }
