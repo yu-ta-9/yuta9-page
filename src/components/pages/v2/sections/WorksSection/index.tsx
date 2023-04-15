@@ -26,7 +26,7 @@ export const WorksSection: FC = () => {
           role='button'
           onClick={(): void => handleSelectMenu('work')}
         >
-          Works
+          <span className={styles['label']}>Works</span>
           <span className={styles['number']}>{workData.length}</span>
         </li>
 
@@ -37,7 +37,7 @@ export const WorksSection: FC = () => {
           role='button'
           onClick={(): void => handleSelectMenu('music')}
         >
-          Music
+          <span className={styles['label']}>Music</span>
           <span className={styles['number']}>{musicData.length}</span>
         </li>
 
@@ -48,7 +48,7 @@ export const WorksSection: FC = () => {
           role='button'
           onClick={(): void => handleSelectMenu('photo')}
         >
-          Photo
+          <span className={styles['label']}>Photo</span>
           <span className={styles['number']}>0</span>
         </li>
       </ul>

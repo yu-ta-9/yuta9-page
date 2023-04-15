@@ -79,6 +79,14 @@
     box-shadow: 0 0 0 2px v.$color-main-v2;
   }
 
+  > .navbar > .item > .label {
+    transition: all 0.1s ease-in;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
   > .navbar > .item > .number {
     position: absolute;
     top: -8px;
