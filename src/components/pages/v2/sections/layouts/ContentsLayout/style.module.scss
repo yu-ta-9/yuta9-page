@@ -5,7 +5,7 @@
   position: relative;
   display: flex;
   width: 100vw;
-  padding: 270px 48px;
+  padding: 140px 48px;
 
   &.-theme-primary {
     background-color: v.$color-base-primary;
@@ -39,6 +39,7 @@
     flex: 1;
     flex-direction: column;
     max-width: 1120px;
-    overflow: auto;
+    overflow-x: clip;
+    overflow-y: visible;
   }
 }
