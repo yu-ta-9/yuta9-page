@@ -11,7 +11,23 @@ export const AboutSection: FC = () => {
   return (
     <>
       <div className={styles['about-wrapper']}>
-        <img className={styles['image']} src='/images/sample_profile.png' alt='profile' />
+        <img
+          className={styles['image']}
+          src='/images/profile.jpg'
+          alt='profile'
+          // MEMO: 画像保存を防ぐ
+          onSelect={(): boolean => {
+            return false;
+          }}
+          onMouseDown={(): boolean => {
+            return false;
+          }}
+          onContextMenu={(): boolean => {
+            return false;
+          }}
+        />
+        {/* MEMO: 画像保存を防ぐ */}
+        <div className={styles['dummy']}></div>
 
         <div className={styles['about']}>
           <h3 className={styles['title']}>Profile</h3>
