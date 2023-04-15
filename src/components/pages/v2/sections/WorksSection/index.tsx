@@ -55,8 +55,14 @@ export const WorksSection: FC = () => {
 
       <div className={styles['contents']}>
         {/** TODO: 常に再描画はコストが高いのでunmountせずに切り替えるようにする  */}
-        {activeMenu === 'work' && <Slider data={workData} />}
-        {activeMenu === 'music' && <Slider data={musicData} />}
+
+        <div className={classNames(styles['wrapper'], { [styles['-show']]: activeMenu === 'work' })}>
+          <Slider data={workData} />
+        </div>
+
+        <div className={classNames(styles['wrapper'], { [styles['-show']]: activeMenu === 'music' })}>
+          <Slider data={musicData} />
+        </div>
       </div>
     </div>
   );
