@@ -1,8 +1,7 @@
 import type { NextPage } from 'next';
 
-import V2 from './v2';
-
 import { HeadTemplate } from '../components/HeadTemplate';
+import { V2 } from '../components/pages/v2';
 
 const Home: NextPage = () => {
   return (
