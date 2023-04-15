@@ -1269,9 +1269,9 @@ dom-serializer@^2.0.0:
     entities "^4.2.0"
 
 dom7@^4.0.4:
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/dom7/-/dom7-4.0.4.tgz#8b68c5d8e5e2ed0fddb1cb93e433bc9060c8f3fb"
-  integrity sha512-DSSgBzQ4rJWQp1u6o+3FVwMNnT5bzQbMb+o31TjYYeRi05uAcpF8koxdfzeoe5ElzPmua7W7N28YJhF7iEKqIw==
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/dom7/-/dom7-4.0.6.tgz#091a51621d7a19ce0fb86045cafb3c10035e97ed"
+  integrity sha512-emjdpPLhpNubapLFdjNL9tP06Sr+GZkrIHEXLWvOGsytACUrkbeIdjO5g77m00BrHTznnlcNqgmn7pCN192TBA==
   dependencies:
     ssr-window "^4.0.0"
 
@@ -3545,10 +3545,10 @@ svgo@^3.0.2:
     csso "^5.0.5"
     picocolors "^1.0.0"
 
-swiper@^8.2.1:
-  version "8.2.1"
-  resolved "https://registry.yarnpkg.com/swiper/-/swiper-8.2.1.tgz#95f72268b68fbf2df614089763b9ff4fef6faf69"
-  integrity sha512-hdS1JRG5WqHLzlRMJGOFJRYAl5wdEoj2AEAQFuDzidsBxsKMdF1mZqnboqKOdDmfaogloAaFcDrNQlJbYbGaWQ==
+swiper@8.4.6:
+  version "8.4.6"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-8.4.6.tgz#5b52c83cb4aa9ce6f1640e44d3f93ff4ea6f7682"
+  integrity sha512-HACW035vBz2T6Kfut23EAzXhcDpgR8doX+wjq0ZUvJgS5SQApGrV885DAPLBFnmPUISsAhNSVxPKDxqroFvXvQ==
   dependencies:
     dom7 "^4.0.4"
     ssr-window "^4.0.2"
