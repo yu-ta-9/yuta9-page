@@ -20,7 +20,7 @@ export default withTranslation('common')(Home);
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale!, ['common'])),
+      ...(await serverSideTranslations(locale || 'ja', ['common'])),
     },
   };
 };
