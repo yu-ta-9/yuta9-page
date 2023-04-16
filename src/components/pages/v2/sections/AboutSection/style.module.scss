@@ -21,7 +21,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: 32px;
-    color: #fff;
   }
 
   > .about > .description {
@@ -29,7 +28,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 26px;
-    color: #fff;
+    white-space: pre-wrap;
   }
 
   > .about > .links {

@@ -1,3 +1,5 @@
+import { useTranslation } from 'next-i18next';
+
 import type { FC } from 'react';
 
 import styles from './style.module.scss';
@@ -8,6 +10,8 @@ import { IconTwitter } from '../../../../icons/Twitter';
 import { IconZenn } from '../../../../icons/Zenn';
 
 export const AboutSection: FC = () => {
+  const { t } = useTranslation('common');
+
   return (
     <>
       <div className={styles['about-wrapper']}>
@@ -31,12 +35,7 @@ export const AboutSection: FC = () => {
 
         <div className={styles['about']}>
           <h3 className={styles['title']}>Profile</h3>
-          <p className={styles['description']}>
-            情報系大学卒→一部上場IT→ベンチャーSES→チームラボ→ベーシックのSaasエンジニア。
-            何か面白いモノを作ることにモチベ沸きます。
-            <br />
-            趣味： 楽器演奏（ドラムなど）、音楽ライブ、ジム通い
-          </p>
+          <p className={styles['description']}>{t('top.about.introduction')}</p>
           <div className={styles['links']}>
             <a href='https://twitter.com/yuta9_drumming' target='_blank' rel='noreferrer'>
               <IconTwitter width={24} height={24} />

@@ -1,6 +1,6 @@
 import styles from './style.module.scss';
 
-import data from '../../../../data/works.json';
+import data from '../../../../data/ja/works.json';
 import { Slide } from '../../Slide';
 
 export const WorkSection: React.FC = () => {

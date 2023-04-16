@@ -1,3 +1,5 @@
+@use '~/styles/variables.module.scss' as v;
+
 @keyframes fade-in {
   from {
     top: 0;
@@ -19,7 +21,7 @@
     align-items: center;
     font-size: 18px;
     line-height: 23px;
-    color: #fff;
+    color: v.$color-text;
     cursor: pointer;
     background: none;
     border: none;
@@ -28,7 +30,7 @@
   > .button > .arrow {
     width: 0;
     height: 0;
-    border-top: 5px solid #fff;
+    border-top: 5px solid v.$color-text;
     border-right: 5px solid transparent;
     border-left: 5px solid transparent;
   }
@@ -44,8 +46,14 @@
   > .dropdown > .menu > .list {
     font-size: 18px;
     line-height: 23px;
-    color: #fff;
+    color: v.$color-text;
     text-align: center;
-    border: #fff solid 1px;
+    cursor: pointer;
+    border: v.$color-text solid 1px;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      background-color: v.$color-main-v2;
+    }
   }
 }

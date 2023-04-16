@@ -1,6 +1,6 @@
 import styles from './style.module.scss';
 
-import data from '../../../../data/musics.json';
+import data from '../../../../data/ja/musics.json';
 import { Slide } from '../../Slide';
 
 export const MusicSection: React.FC = () => {
