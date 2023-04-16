@@ -1,11 +1,4 @@
 /* color */
-$color-main: #97ffe6;
-$color-secondary: #f7e399;
-$color-third: #fffdd9;
-$color-white: #fff;
-$color-text-black: #304556;
-
-/* v2 */
 $color-main-v2: #01ff76;
 $color-base-primary: #494949;
 $color-base-secondary: #0d0d0d;
@@ -28,16 +21,3 @@ $line-height: 1.7;
 $z-index-header-menu: 1000;
 $z-index-about-contents: 10;
 $z-index-about-image: 15;
-
-/* stylelint-disable property-no-unknown */
-/* stylelint-disable property-case */
-/* stylelint-disable selector-pseudo-class-no-unknown */
-:export {
-  colorMain: $color-main;
-  colorSecondary: $color-secondary;
-  colorThird: $color-third;
-  colorTextBlack: $color-text-black;
-}
-/* stylelint-enable property-no-unknown */
-/* stylelint-enable property-case */
-/* stylelint-enable selector-pseudo-class-no-unknown */
