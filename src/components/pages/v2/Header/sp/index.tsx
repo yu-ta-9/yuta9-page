@@ -4,6 +4,7 @@ import type { FC } from 'react';
 
 import { Contents } from './Contents';
 import { Opener } from './Opener';
+import styles from './style.module.scss';
 
 export const HeaderSp: FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,10 +13,19 @@ export const HeaderSp: FC = () => {
     setIsOpen((prev) => !prev);
   };
 
+  const closeOpen = (): void => {
+    setIsOpen(false);
+  };
+
   return (
     <>
       <Opener isOpen={isOpen} onToggleOpen={toggleOpen} />
-      {isOpen && <Contents />}
+      {isOpen && (
+        <>
+          <Contents />
+          <div className={styles['overlay-container']} onClick={closeOpen}></div>
+        </>
+      )}
     </>
   );
 };
