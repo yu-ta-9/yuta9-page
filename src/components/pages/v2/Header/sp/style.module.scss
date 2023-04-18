@@ -1,0 +1,85 @@
+@use '~/styles/variables.module.scss' as v;
+@use '~/styles/mixins.module.scss' as m;
+
+.opener-container {
+  position: fixed;
+  top: 36px;
+  right: 16px;
+  z-index: v.$z-index-header-menu;
+  width: 62px;
+  height: 14px;
+
+  > .line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s;
+
+    &:nth-child(1) {
+      top: 0;
+
+      &.-open {
+        transform: rotate(45deg) translate(0, 7px);
+      }
+    }
+
+    &:nth-child(2) {
+      top: 14px;
+
+      &.-open {
+        transform: rotate(-45deg) translate(0, 7px);
+      }
+    }
+  }
+
+  &.-open > .line {
+    &:nth-child(1) {
+      transform: rotate(12deg) translate(0, 7px);
+    }
+
+    &:nth-child(2) {
+      transform: rotate(-12deg) translate(0, -7px);
+    }
+  }
+}
+
+.contents-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: v.$z-index-header-menu - 5;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100vw;
+  padding: 76px 46px 46px;
+  background-color: v.$color-base-secondary;
+
+  > .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    font-size: 24px;
+    font-weight: 700;
+
+    @include m.title;
+  }
+
+  > .menu > .list {
+    width: 100%;
+    padding-bottom: 8px;
+    border-bottom: 1px solid v.$color-main-v2;
+  }
+
+  > .locale {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}

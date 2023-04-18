@@ -4,7 +4,11 @@ import mixins from '../../styles/mixins.module.scss';
 
 const query = `(max-width: ${mixins.spWidth})`;
 
-export const useDevice = (): boolean => {
+type UseDeviceReturns = {
+  isSp: boolean;
+};
+
+export const useDevice = (): UseDeviceReturns => {
   const [mediaQuery, setMediaQuery] = useState<MediaQueryList | undefined>(undefined);
 
   // MEMO: deepな変更は検知しないので再pushする必要がある
@@ -26,5 +30,7 @@ export const useDevice = (): boolean => {
     return () => mediaQuery?.removeEventListener('change', handleListener);
   }, [mediaQuery, handleListener]);
 
-  return mediaQuery?.matches || false;
+  return {
+    isSp: mediaQuery?.matches || false,
+  };
 };

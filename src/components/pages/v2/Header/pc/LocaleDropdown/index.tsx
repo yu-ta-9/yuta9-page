@@ -5,8 +5,8 @@ import type { FC } from 'react';
 
 import styles from './style.module.scss';
 
-import { useOutsideClick } from '../../../../../hooks/useOutsideClick';
-import { IconGlobal } from '../../../../icons/Global';
+import { useOutsideClick } from '../../../../../../hooks/useOutsideClick';
+import { IconGlobal } from '../../../../../icons/Global';
 
 const ORIGIN_MENUS = [
   {
