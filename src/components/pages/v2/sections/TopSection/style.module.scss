@@ -26,6 +26,12 @@
     font-weight: 700;
     line-height: 76px;
     transform: translateY(-50%);
+
+    @include m.sp {
+      left: 20px;
+      font-size: 36px;
+      line-height: 42px;
+    }
   }
 }
 
@@ -41,7 +47,7 @@
 
 .scroll-bar {
   position: absolute;
-  right: 52px;
+  right: 24px;
   bottom: 0;
   font-size: 13.3029px;
   font-weight: 300;
