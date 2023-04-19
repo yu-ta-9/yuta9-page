@@ -7,6 +7,11 @@
   width: 100vw;
   padding: 140px 48px;
 
+  @include m.sp {
+    display: block;
+    padding: 96px 16px;
+  }
+
   &.-theme-primary {
     background-color: v.$color-base-primary;
   }
@@ -31,6 +36,13 @@
     letter-spacing: 0.07em;
     transform: translate(-100%, 0%) rotate(-90deg);
     transform-origin: right top;
+
+    @include m.sp {
+      font-size: 24px;
+      line-height: 28px;
+      transform: inherit;
+      transform-origin: inherit;
+    }
   }
 
   > .contents {
@@ -41,5 +53,9 @@
     max-width: 1120px;
     overflow-x: clip;
     overflow-y: visible;
+
+    @include m.sp {
+      margin-top: 40px;
+    }
   }
 }

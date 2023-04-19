@@ -6,12 +6,17 @@
   flex: 1;
 
   > .about {
-    z-index: v.$z-index-about-contents;
     width: 80%;
     padding: 74px 100px;
     margin-top: 120px;
     margin-left: auto;
     background: linear-gradient(270deg, rgb(1 255 118 / 72%) 0%, rgb(1 255 118 / 0%) 100%);
+
+    @include m.sp {
+      width: 100%;
+      padding: 32px;
+      margin-top: 192px;
+    }
   }
 
   > .about > .title {
@@ -21,6 +26,11 @@
     font-style: normal;
     font-weight: 500;
     line-height: 32px;
+
+    @include m.sp {
+      font-size: 20px;
+      line-height: 23px;
+    }
   }
 
   > .about > .description {
@@ -29,6 +39,11 @@
     font-weight: 400;
     line-height: 26px;
     white-space: pre-wrap;
+
+    @include m.sp {
+      font-size: 16px;
+      line-height: 23px;
+    }
   }
 
   > .about > .links {
