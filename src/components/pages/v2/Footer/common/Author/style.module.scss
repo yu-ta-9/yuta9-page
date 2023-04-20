@@ -1,0 +1,34 @@
+@use '~/styles/variables.module.scss' as v;
+@use '~/styles/mixins.module.scss' as m;
+
+.author-container {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+  font-size: 12px;
+  font-weight: 400;
+  color: #8e8e8e;
+
+  @include m.sp {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+
+  > .detail {
+    display: flex;
+    gap: 8px;
+    align-items: flex-end;
+  }
+
+  > .detail > .role {
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  > .detail > .link {
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: underline;
+  }
+}
