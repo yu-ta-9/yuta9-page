@@ -51,8 +51,6 @@
     flex: 1;
     flex-direction: column;
     max-width: 1120px;
-    overflow-x: clip;
-    overflow-y: visible;
 
     @include m.sp {
       margin-top: 40px;

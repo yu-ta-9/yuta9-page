@@ -30,22 +30,24 @@ export const SkillSection: FC = () => {
 
   return (
     <div className={styles['section-skill']}>
-      <div className={styles['graph']}>
-        <div className={classNames(styles['axis'], styles['-origin'])}></div>
-        <div className={classNames(styles['axis'], styles['-first'])}></div>
-        <div className={classNames(styles['axis'], styles['-second'])}></div>
-        <div className={classNames(styles['axis'], styles['-third'])}></div>
-        <div className={styles['frontend']} onMouseOver={(): void => handleMouseOver('frontend')}>
-          Frontend
-        </div>
-        <div className={styles['backend']} onMouseOver={(): void => handleMouseOver('backend')}>
-          Backend
-        </div>
-        <div className={styles['infrastructure']} onMouseOver={(): void => handleMouseOver('infrastructure')}>
-          Infrastructure
-        </div>
-        <div className={styles['other']} onMouseOver={(): void => handleMouseOver('other')}>
-          Other
+      <div className={styles['wrapper']}>
+        <div className={styles['graph']}>
+          <div className={classNames(styles['axis'], styles['-origin'])}></div>
+          <div className={classNames(styles['axis'], styles['-first'])}></div>
+          <div className={classNames(styles['axis'], styles['-second'])}></div>
+          <div className={classNames(styles['axis'], styles['-third'])}></div>
+          <div className={styles['frontend']} onMouseOver={(): void => handleMouseOver('frontend')}>
+            Frontend
+          </div>
+          <div className={styles['backend']} onMouseOver={(): void => handleMouseOver('backend')}>
+            Backend
+          </div>
+          <div className={styles['infrastructure']} onMouseOver={(): void => handleMouseOver('infrastructure')}>
+            Infrastructure
+          </div>
+          <div className={styles['other']} onMouseOver={(): void => handleMouseOver('other')}>
+            Other
+          </div>
         </div>
       </div>
 
