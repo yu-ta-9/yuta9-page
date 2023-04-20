@@ -1,0 +1,91 @@
+@use '~/styles/variables.module.scss' as v;
+
+@keyframes active-item {
+  from {
+    background-color: v.$color-main-v2;
+  }
+
+  to {
+    background-color: transparent;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.section-works {
+  > .navbar {
+    display: flex;
+    gap: 24px;
+  }
+
+  > .navbar > .item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #8e8e8e;
+    cursor: pointer;
+
+    &.-focus {
+      color: v.$color-main-v2;
+    }
+
+    &::before {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin-right: 8px;
+      margin-left: 2px;
+      content: '';
+      background-color: transparent;
+      border-radius: 50%;
+      box-shadow: 0 0 0 2px #8e8e8e;
+    }
+
+    &.-focus::before {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+      background-color: v.$color-main-v2;
+      border-radius: 50%;
+      box-shadow: inherit;
+    }
+  }
+
+  > .navbar > .item > .label {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  > .navbar > .item > .number {
+    position: absolute;
+    top: 0;
+    right: -8px;
+    font-size: 8px;
+    font-weight: 700;
+  }
+
+  > .contents {
+    // MEMO: 指定しないとswiperが上手く横幅を定めてくれない
+    min-width: 0;
+    margin-top: 16px;
+  }
+
+  > .contents > .wrapper {
+    display: none;
+    height: 100vh;
+  }
+
+  > .contents > .wrapper.-show {
+    display: block;
+    animation: show 0.3s ease-in;
+  }
+}

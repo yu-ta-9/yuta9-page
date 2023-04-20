@@ -4,7 +4,7 @@ import { Keyboard, Pagination, Navigation, Autoplay } from 'swiper';
 import { Mousewheel } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import type { Data } from '../../../../../../@types/data';
+import type { Data } from '../../../../../../../@types/data';
 import type { FC } from 'react';
 
 import styles from './style.module.scss';
@@ -14,7 +14,7 @@ type Props = {
   data: Data[];
 };
 
-const _Slider: FC<Props> = ({ id, data }) => {
+const _SliderPc: FC<Props> = ({ id, data }) => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
   return (
@@ -64,4 +64,4 @@ const _Slider: FC<Props> = ({ id, data }) => {
   );
 };
 
-export const Slider = memo(_Slider);
+export const SliderPc = memo(_SliderPc);
