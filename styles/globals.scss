@@ -11,6 +11,10 @@ body {
   background-color: v.$color-base-secondary;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   color: inherit;
   text-decoration: none;
