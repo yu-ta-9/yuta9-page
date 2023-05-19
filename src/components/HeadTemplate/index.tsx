@@ -13,6 +13,8 @@ export const HeadTemplate: React.FC = () => {
       <meta property='og:description' content='This is a home page of YU-TA-9.' />
       <meta property='og:site_name' content="YU-TA-9's PAGE" />
       <meta property='og:image' content='/images/logo.png' />
+      {/* Twitter OGP */}
+      <meta name='twitter:card' content='summary' />
     </Head>
   );
 };
