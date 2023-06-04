@@ -1,28 +1,5 @@
-@use 'sass:color';
 @use '~/styles/variables.module.scss' as v;
 @use '~/styles/mixins.module.scss' as m;
-
-$color-frontend: #bf5c5c;
-$color-backend: #5c94bf;
-$color-infrastructure: #8251a8;
-$color-other: #588c43;
-$lightness-amount: 8%;
-
-@mixin bar {
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  width: 325px;
-  padding-bottom: 32px;
-  cursor: pointer;
-  transition: all 0.2s cubic-bezier(0.02, 0.9, 0.87, 0.8);
-  transform-origin: center bottom;
-
-  &:hover {
-    transform: scale(1.1);
-  }
-}
 
 .section-skill {
   > .wrapper {
@@ -40,51 +17,6 @@ $lightness-amount: 8%;
 
     @include m.sp {
       width: 680px;
-    }
-  }
-
-  > .wrapper > .graph > .frontend {
-    @include bar;
-
-    height: 413px;
-    background-color: $color-frontend;
-    transition: all 0.3s;
-
-    &:hover {
-      background-color: color.scale($color-frontend, $lightness: $lightness-amount);
-    }
-  }
-
-  > .wrapper > .graph > .backend {
-    @include bar;
-
-    height: 324px;
-    background-color: $color-backend;
-
-    &:hover {
-      background-color: color.scale($color-backend, $lightness: $lightness-amount);
-    }
-  }
-
-  > .wrapper > .graph > .infrastructure {
-    @include bar;
-
-    height: 271px;
-    background-color: $color-infrastructure;
-
-    &:hover {
-      background-color: color.scale($color-infrastructure, $lightness: $lightness-amount);
-    }
-  }
-
-  > .wrapper > .graph > .other {
-    @include bar;
-
-    height: 120px;
-    background-color: $color-other;
-
-    &:hover {
-      background-color: color.scale($color-other, $lightness: $lightness-amount);
     }
   }
 

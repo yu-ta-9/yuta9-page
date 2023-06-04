@@ -12,18 +12,23 @@ export const V2: FC = () => {
   return (
     <>
       <Header />
+
       <main>
         <TopSection />
+
         <ContentsLayout id='about' heading='ABOUT' theme='primary'>
           <AboutSection />
         </ContentsLayout>
+
         <ContentsLayout id='skill' heading='SKILL' theme='primary'>
           <SkillSection />
         </ContentsLayout>
+
         <ContentsLayout id='works' heading='WORKS' theme='secondary'>
           <WorksSection />
         </ContentsLayout>
       </main>
+
       <Footer />
     </>
   );

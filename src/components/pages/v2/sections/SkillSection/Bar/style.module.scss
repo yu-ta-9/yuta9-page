@@ -1,0 +1,87 @@
+@use 'sass:color';
+@use '~/styles/variables.module.scss' as v;
+
+$color-frontend: #bf5c5c;
+$color-backend: #5c94bf;
+$color-infrastructure: #8251a8;
+$color-other: #588c43;
+$lightness-amount: 8%;
+
+.bar-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 325px;
+  padding: 32px 16px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.02, 0.9, 0.87, 0.8);
+  transform-origin: center bottom;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &.-frontend {
+    height: 413px;
+    background-color: $color-frontend;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: color.scale($color-frontend, $lightness: $lightness-amount);
+    }
+  }
+
+  &.-backend {
+    height: 324px;
+    background-color: $color-backend;
+
+    &:hover {
+      background-color: color.scale($color-backend, $lightness: $lightness-amount);
+    }
+  }
+
+  &.-infrastructure {
+    height: 271px;
+    background-color: $color-infrastructure;
+
+    &:hover {
+      background-color: color.scale($color-infrastructure, $lightness: $lightness-amount);
+    }
+  }
+
+  &.-other {
+    height: 180px;
+    background-color: $color-other;
+
+    &:hover {
+      background-color: color.scale($color-other, $lightness: $lightness-amount);
+    }
+  }
+
+  > .contents {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  > .contents > .icon {
+    width: 36px;
+    height: 36px;
+    padding: 4px;
+  }
+
+  > .contents > .icon > .image {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(2px 4px 2px black);
+  }
+
+  > .label {
+    font-size: 16px;
+    color: v.$color-text;
+  }
+}
