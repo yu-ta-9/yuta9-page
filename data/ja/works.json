@@ -1,5 +1,10 @@
 [
   {
+    "title": "見積もりフォーム作成アプリ「Mr. Pricer」",
+    "url": "https://www.youtube-nocookie.com/embed/ZTixlAgww-g",
+    "caption": "見積もりのやり取りを手助けするアプリ。Next.js/TypeScript/Prisma/PostgreSQL/Vercel"
+  },
+  {
     "title": "本棚アプリ",
     "url": "https://www.youtube-nocookie.com/embed/MWTY8FW-3AA",
     "caption": "React/TypeScript/Nest.js/Aws/Terraform"
