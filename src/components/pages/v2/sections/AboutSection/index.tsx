@@ -35,7 +35,7 @@ export const AboutSection: FC = () => {
 
         <div className={styles['about']}>
           <h3 className={styles['title']}>Profile</h3>
-          <p className={styles['description']}>{t('top.about.introduction')}</p>
+          <p className={styles['description']} dangerouslySetInnerHTML={{ __html: t('top.about.introduction') }}></p>
           <div className={styles['links']}>
             <a href='https://twitter.com/yuta9_drumming' target='_blank' rel='noreferrer'>
               <IconTwitter width={24} height={24} />
