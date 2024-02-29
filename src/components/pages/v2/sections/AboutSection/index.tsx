@@ -6,6 +6,7 @@ import styles from './style.module.scss';
 
 import { IconGithub } from '../../../../icons/Github';
 import { IconQiita } from '../../../../icons/Qiita';
+import { IconStorybook } from '../../../../icons/Storybook';
 import { IconTwitter } from '../../../../icons/Twitter';
 import { IconZenn } from '../../../../icons/Zenn';
 
@@ -48,6 +49,9 @@ export const AboutSection: FC = () => {
             </a>
             <a href='https://qiita.com/YU-TA-9' target='_blank' rel='noreferrer'>
               <IconQiita width={24} height={24} />
+            </a>
+            <a href='https://storybook.yu-ta-9.com' target='_blank' rel='noreferrer'>
+              <IconStorybook width={24} height={24} color='#fff' />
             </a>
           </div>
         </div>
