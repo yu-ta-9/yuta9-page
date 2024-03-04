@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import { useTranslation } from 'react-i18next';
 
 import type { FC } from 'react';
 
@@ -8,9 +9,10 @@ import { IconGlobal } from '../../../../../icons/Global';
 
 export const Contents: FC = () => {
   const { locale } = useRouter();
+  const { t } = useTranslation('common');
 
   return (
-    <div className={styles['contents-container']}>
+    <nav className={styles['contents-container']} aria-label={t('header.navigation.label') || ''}>
       <ul className={styles['menu']}>
         <li className={styles['list']}>
           <a href='#about'>ABOUT</a>
@@ -31,6 +33,6 @@ export const Contents: FC = () => {
           En
         </a>
       </div>
-    </div>
+    </nav>
   );
 };
