@@ -45,11 +45,18 @@
 
   > .dropdown > .menu > .list {
     font-size: 18px;
-    line-height: 23px;
+    line-height: 28px;
     color: v.$color-text;
     text-align: center;
-    cursor: pointer;
     border: v.$color-text solid 1px;
+  }
+
+  // TODO: refactor
+  /* stylelint-disable-next-line rscss/class-format */
+  > .dropdown > .menu > .list > a {
+    display: block;
+    width: 100%;
+    cursor: pointer;
     transition: all 0.2s ease-in;
 
     &:hover {
