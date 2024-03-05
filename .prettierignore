@@ -1,7 +1,7 @@
 .next
 coverage
 node_modules
-yarn.lock
+pnpm-lock.yaml
 pull_request_template.md
 
 # 生成されたファイルは無視する
