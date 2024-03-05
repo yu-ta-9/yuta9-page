@@ -32,36 +32,31 @@ export const WorksSectionPc: FC = () => {
 
   return (
     <div className={styles['section-works']}>
+      {/* TODO: refactor */}
       <ul className={styles['navbar']}>
-        <li
-          className={classNames(styles['item'], { [styles['-focus']]: activeMenu === 'work' })}
-          role='button'
-          onClick={(): void => handleSelectMenu('work')}
-        >
-          <span className={styles['label']}>Works</span>
-          <span className={styles['number']}>{workData?.length}</span>
+        <li className={classNames(styles['item'], { [styles['-focus']]: activeMenu === 'work' })}>
+          <button type='button' className={styles['button']} onClick={(): void => handleSelectMenu('work')}>
+            <span className={styles['label']}>Works</span>
+            <span className={styles['number']}>{workData?.length}</span>
+          </button>
         </li>
 
         <div className={styles['connector']}></div>
 
-        <li
-          className={classNames(styles['item'], { [styles['-focus']]: activeMenu === 'music' })}
-          role='button'
-          onClick={(): void => handleSelectMenu('music')}
-        >
-          <span className={styles['label']}>Music</span>
-          <span className={styles['number']}>{musicData?.length}</span>
+        <li className={classNames(styles['item'], { [styles['-focus']]: activeMenu === 'music' })}>
+          <button type='button' className={styles['button']} onClick={(): void => handleSelectMenu('music')}>
+            <span className={styles['label']}>Music</span>
+            <span className={styles['number']}>{musicData?.length}</span>
+          </button>
         </li>
 
         <div className={styles['connector']}></div>
 
-        <li
-          className={classNames(styles['item'], { [styles['-focus']]: activeMenu === 'photo' })}
-          role='button'
-          onClick={(): void => handleSelectMenu('photo')}
-        >
-          <span className={styles['label']}>Photo</span>
-          <span className={styles['number']}>0</span>
+        <li className={classNames(styles['item'], { [styles['-focus']]: activeMenu === 'photo' })}>
+          <button type='button' className={styles['button']} onClick={(): void => handleSelectMenu('photo')}>
+            <span className={styles['label']}>Photo</span>
+            <span className={styles['number']}>0</span>
+          </button>
         </li>
       </ul>
 

@@ -27,15 +27,8 @@
   }
 
   > .navbar > .item {
-    position: relative;
     display: flex;
     align-items: center;
-    color: #8e8e8e;
-    cursor: pointer;
-
-    &.-focus {
-      color: v.$color-main-v2;
-    }
 
     &::before {
       display: inline-block;
@@ -60,12 +53,30 @@
     }
   }
 
-  > .navbar > .item > .label {
+  > .navbar > .item > .button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    color: #8e8e8e;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+
+    &.-focus {
+      color: v.$color-main-v2;
+    }
+  }
+
+  // TODO: refactor
+  /* stylelint-disable-next-line rscss/class-format */
+  > .navbar > .item > .button > .label {
     font-size: 14px;
     font-weight: 700;
   }
 
-  > .navbar > .item > .number {
+  /* stylelint-disable-next-line rscss/class-format */
+  > .navbar > .item > .button > .number {
     position: absolute;
     top: 0;
     right: -8px;
