@@ -7,5 +7,5 @@ My homepage app.
 - Next.js
 - TypeScript
 - Sass (CSS Modules)
-- Yarn 1.x
+- pnpm 8.x
 - Vercel for hosting

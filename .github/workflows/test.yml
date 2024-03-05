@@ -5,38 +5,49 @@ on:
 
 jobs:
   node-test:
-    runs-on: ${{ matrix.os }}
-
     strategy:
       matrix:
         os: ['ubuntu-latest']
         node: [20.x]
 
+    runs-on: ${{ matrix.os }}
+
     steps:
+      - name: checkout
+        uses: actions/checkout@v3
+
       - name: setup nodeJs ${{ matrix.node }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
 
-      - name: checkout
-        uses: actions/checkout@v3
-
-      - name: cache node_modules
-        id: node_modules_cache_id
-        uses: actions/cache@v3
+      - uses: pnpm/action-setup@v3
+        name: Install pnpm
         with:
-          path: node_modules
-          key: ${{ matrix.os }}-node-v${{ matrix.node }}-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
+          version: 8
+          run_install: false
 
-      - name: yarn install
-        if: steps.node_modules_cache_id.outputs.cache-hit != 'true'
-        run: yarn install --frozen-lockfile
+      - name: Get pnpm store directory
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install dependencies
+        run: pnpm install
 
       - name: lint test
-        run: yarn lint:js
+        run: pnpm run lint:js
 
       - name: stylelint test
-        run: yarn lint:css
+        run: pnpm run lint:css
 
       - name: typescript test
-        run: yarn ts-test
+        run: pnpm run ts:test
