@@ -2,6 +2,6 @@
 "$(dirname "$0")/_/husky.sh"
 
 # test
-yarn lint:js
-yarn lint:css
-yarn ts-test
+pnpm lint:js
+pnpm lint:css
+pnpm ts:test

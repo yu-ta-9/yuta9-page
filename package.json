@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
     "dev": "next dev",
     "build": "next build",
@@ -11,7 +12,7 @@
     "lint:js": "eslint **/*.{ts,tsx}",
     "lint:js:fix": "eslint --fix **/*.{ts,tsx}",
     "lint:css": "stylelint **/*.{css,scss,sass}",
-    "ts-test": "tsc --noEmit",
+    "ts:test": "tsc --noEmit",
     "icons": "npx @svgr/cli --no-index -d src/components/icons public/icons"
   },
   "dependencies": {
@@ -29,8 +30,7 @@
     "react-i18next": "^12.2.0",
     "react-scroll": "^1.8.9",
     "reset-css": "^5.0.1",
-    "swiper": "8.4.6",
-    "yarn": "^1.22.19"
+    "swiper": "8.4.6"
   },
   "devDependencies": {
     "@svgr/cli": "^7.0.0",

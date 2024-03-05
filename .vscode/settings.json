@@ -22,8 +22,7 @@
     "editor.formatOnSave": false
   },
   "search.exclude": {
-    "**/node_modules": true,
-    "**/yarn.lock": true
+    "**/node_modules": true
   },
   "cSpell.words": ["Toeic", "Zenn", "Qiita"],
   "peacock.color": "#01ff76",
