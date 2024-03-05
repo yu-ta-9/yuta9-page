@@ -50,7 +50,7 @@
     "eslint-plugin-react-hooks": "^4.5.0",
     "eslint-plugin-unused-imports": "^2.0.0",
     "husky": "^8.0.3",
-    "sass": "^1.51.0",
+    "sass": "^1.71.1",
     "stylelint": "^15.10.1",
     "stylelint-config-recess-order": "^3.1.0",
     "stylelint-config-standard-scss": "^11.1.0",
