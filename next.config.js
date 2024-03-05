@@ -8,7 +8,6 @@ const nextConfig = {
   images: {
     domains: ['images.microcms-assets.io'],
   },
-  ssr: false,
 };
 
 module.exports = nextConfig;
