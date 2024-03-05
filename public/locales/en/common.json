@@ -15,5 +15,10 @@
     "skill": {
       "noSelect": "*Hover over to see details"
     }
+  },
+  "works": {
+    "navigation": {
+      "label": "Works menu"
+    }
   }
 }

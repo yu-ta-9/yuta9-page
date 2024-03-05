@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import type { Data } from '../../../../../../@types/data';
 import type { FC } from 'react';
@@ -12,6 +13,7 @@ type Menu = 'work' | 'music' | 'photo';
 
 export const WorksSectionPc: FC = () => {
   const { locale } = useRouter();
+  const { t } = useTranslation('common');
 
   const [activeMenu, setActiveMenu] = useState<Menu>('work');
   const [workData, setWorkData] = useState<Data[]>();
@@ -33,32 +35,34 @@ export const WorksSectionPc: FC = () => {
   return (
     <div className={styles['section-works']}>
       {/* TODO: refactor */}
-      <ul className={styles['navbar']}>
-        <li className={classNames(styles['item'], { [styles['-focus']]: activeMenu === 'work' })}>
-          <button type='button' className={styles['button']} onClick={(): void => handleSelectMenu('work')}>
-            <span className={styles['label']}>Works</span>
-            <span className={styles['number']}>{workData?.length}</span>
-          </button>
-        </li>
+      <nav aria-label={t('works.navigation.label') || ''}>
+        <ul className={styles['navbar']}>
+          <li className={classNames(styles['item'], { [styles['-focus']]: activeMenu === 'work' })}>
+            <button type='button' className={styles['button']} onClick={(): void => handleSelectMenu('work')}>
+              <span className={styles['label']}>Works</span>
+              <span className={styles['number']}>{workData?.length}</span>
+            </button>
+          </li>
 
-        <div className={styles['connector']}></div>
+          <div className={styles['connector']}></div>
 
-        <li className={classNames(styles['item'], { [styles['-focus']]: activeMenu === 'music' })}>
-          <button type='button' className={styles['button']} onClick={(): void => handleSelectMenu('music')}>
-            <span className={styles['label']}>Music</span>
-            <span className={styles['number']}>{musicData?.length}</span>
-          </button>
-        </li>
+          <li className={classNames(styles['item'], { [styles['-focus']]: activeMenu === 'music' })}>
+            <button type='button' className={styles['button']} onClick={(): void => handleSelectMenu('music')}>
+              <span className={styles['label']}>Music</span>
+              <span className={styles['number']}>{musicData?.length}</span>
+            </button>
+          </li>
 
-        <div className={styles['connector']}></div>
+          <div className={styles['connector']}></div>
 
-        <li className={classNames(styles['item'], { [styles['-focus']]: activeMenu === 'photo' })}>
-          <button type='button' className={styles['button']} onClick={(): void => handleSelectMenu('photo')}>
-            <span className={styles['label']}>Photo</span>
-            <span className={styles['number']}>0</span>
-          </button>
-        </li>
-      </ul>
+          <li className={classNames(styles['item'], { [styles['-focus']]: activeMenu === 'photo' })}>
+            <button type='button' className={styles['button']} onClick={(): void => handleSelectMenu('photo')}>
+              <span className={styles['label']}>Photo</span>
+              <span className={styles['number']}>0</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
 
       <div className={styles['contents']}>
         <div className={classNames(styles['wrapper'], { [styles['-show']]: activeMenu === 'work' })}>

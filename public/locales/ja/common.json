@@ -15,5 +15,10 @@
     "skill": {
       "noSelect": "※ホバーすると詳細が表示されます"
     }
+  },
+  "works": {
+    "navigation": {
+      "label": "Works メニュー"
+    }
   }
 }

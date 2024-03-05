@@ -24,13 +24,13 @@
   display: flex;
   gap: 54px;
 
-  > .navbar {
+  > nav > .navbar {
     display: flex;
     flex-direction: column;
     gap: 16px;
   }
 
-  > .navbar > .item {
+  > nav > .navbar > .item {
     display: flex;
     align-items: center;
 
@@ -57,7 +57,8 @@
     }
   }
 
-  > .navbar > .item > .button {
+  /* stylelint-disable-next-line rscss/class-format */
+  > nav > .navbar > .item > .button {
     position: relative;
     display: flex;
     align-items: center;
@@ -71,7 +72,7 @@
 
   // TODO: refactor
   /* stylelint-disable-next-line rscss/class-format */
-  > .navbar > .item > .button > .label {
+  > nav > .navbar > .item > .button > .label {
     transition: all 0.1s ease-in;
 
     &:hover {
@@ -80,14 +81,14 @@
   }
 
   /* stylelint-disable-next-line rscss/class-format */
-  > .navbar > .item > .button > .number {
+  > nav > .navbar > .item > .button > .number {
     position: absolute;
     top: -8px;
     right: -8px;
     font-size: 12px;
   }
 
-  > .navbar > .connector {
+  > nav > .navbar > .connector {
     display: block;
     width: 4px;
     height: 20px;
