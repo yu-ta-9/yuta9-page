@@ -1,7 +1,7 @@
 import 'reset-css';
-import 'swiper/scss';
-import 'swiper/scss/navigation';
-import 'swiper/scss/pagination';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 import '@/styles/global.css';
 import '@/styles/variables.css';
