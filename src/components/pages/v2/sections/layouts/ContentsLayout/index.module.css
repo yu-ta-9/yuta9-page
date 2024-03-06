@@ -1,22 +1,19 @@
-@use '~/styles/variables.module.scss' as v;
-@use '~/styles/mixins.module.scss' as m;
-
 .contents-layout {
   position: relative;
   display: flex;
   width: 100vw;
   padding: 140px 48px;
 
-  @include m.sp {
+  @media (width <= var(--sp-width)) {
     display: block;
     padding: 96px 16px;
   }
 
-  &.-theme-primary {
-    background-color: v.$color-base-primary;
+  &.theme-primary {
+    background-color: var(--color-base-primary);
   }
 
-  &.-theme-secondary {
+  &.theme-secondary {
     background-color: #3a3a3a;
   }
 
@@ -25,19 +22,19 @@
   }
 
   > .wrapper > .header {
-    @include m.title;
-
     display: inline-block;
+    font-family: var(--font-family-title);
     font-size: 32px;
+    font-style: var(--font-style-title);
     font-style: normal;
     font-weight: 700;
     line-height: 37px;
-    color: v.$color-text;
+    color: var(--color-text);
     letter-spacing: 0.07em;
     transform: translate(-100%, 0%) rotate(-90deg);
     transform-origin: right top;
 
-    @include m.sp {
+    @media (width <= var(--sp-width)) {
       font-size: 24px;
       line-height: 28px;
       transform: inherit;
@@ -52,7 +49,7 @@
     flex-direction: column;
     max-width: 1120px;
 
-    @include m.sp {
+    @media (width <= var(--sp-width)) {
       margin-top: 40px;
     }
   }

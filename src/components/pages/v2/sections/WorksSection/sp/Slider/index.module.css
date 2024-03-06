@@ -10,7 +10,7 @@
 .content-container {
   height: 300px;
 
-  &.-inactive {
+  &.inactive {
     opacity: 0.2;
   }
 

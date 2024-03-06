@@ -14,7 +14,7 @@
     "lint": "next lint",
     "lint:js": "eslint **/*.{ts,tsx}",
     "lint:js:fix": "eslint --fix **/*.{ts,tsx}",
-    "lint:css": "stylelint **/*.{css,scss,sass}",
+    "lint:css": "stylelint **/*.{css}",
     "ts:test": "tsc --noEmit",
     "icons": "npx @svgr/cli --no-index -d src/components/icons public/icons"
   },
@@ -56,11 +56,9 @@
     "eslint-plugin-unused-imports": "^2.0.0",
     "husky": "^8.0.3",
     "run-z": "^2.0.0",
-    "sass": "^1.51.0",
     "stylelint": "^15.10.1",
     "stylelint-config-recess-order": "^3.1.0",
     "stylelint-config-standard-scss": "^11.1.0",
-    "stylelint-rscss": "^0.4.0",
     "typed-css-modules": "^0.9.1",
     "typescript": "5.0.3"
   }

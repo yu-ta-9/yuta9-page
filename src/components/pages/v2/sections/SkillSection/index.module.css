@@ -1,9 +1,6 @@
-@use '~/styles/variables.module.scss' as v;
-@use '~/styles/mixins.module.scss' as m;
-
 .section-skill {
   > .wrapper {
-    @include m.sp {
+    @media (width <= var(--sp-width)) {
       overflow-x: auto;
     }
   }
@@ -15,7 +12,7 @@
     align-items: flex-end;
     padding: 0 40px;
 
-    @include m.sp {
+    @media (width <= var(--sp-width)) {
       width: 680px;
     }
   }
@@ -29,24 +26,24 @@
     border-bottom: none;
     border-left: none;
 
-    &.-origin {
+    &.origin {
       bottom: 0;
-      border-top: 1px solid v.$color-main-v2;
+      border-top: 1px solid var(--color-main-v2);
     }
 
-    &.-first {
+    &.first {
       bottom: 30%;
-      border-top: 1px dotted v.$color-main-v2;
+      border-top: 1px dotted var(--color-main-v2);
     }
 
-    &.-second {
+    &.second {
       bottom: 60%;
-      border-top: 1px dotted v.$color-main-v2;
+      border-top: 1px dotted var(--color-main-v2);
     }
 
-    &.-third {
+    &.third {
       bottom: 90%;
-      border-top: 1px dotted v.$color-main-v2;
+      border-top: 1px dotted var(--color-main-v2);
     }
   }
 

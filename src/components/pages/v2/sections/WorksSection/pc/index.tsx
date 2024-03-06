@@ -3,11 +3,12 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import type { Data } from '../../../../../../@types/data';
+import styles from '@/components/pages/v2/sections/WorksSection/pc/index.module.css';
+
+import type { Data } from '@/@types/data';
 import type { FC } from 'react';
 
 import { SliderPc } from './Slider';
-import styles from './style.module.scss';
 
 type Menu = 'work' | 'music' | 'photo';
 
@@ -33,11 +34,11 @@ export const WorksSectionPc: FC = () => {
   };
 
   return (
-    <div className={styles['section-works']}>
+    <div className={styles.sectionWorks}>
       {/* TODO: refactor */}
       <nav aria-label={t('works.navigation.label') || ''}>
         <ul className={styles['navbar']}>
-          <li className={classNames(styles['item'], { [styles['-focus']]: activeMenu === 'work' })}>
+          <li className={classNames(styles['item'], { [styles.focus]: activeMenu === 'work' })}>
             <button type='button' className={styles['button']} onClick={(): void => handleSelectMenu('work')}>
               <span className={styles['label']}>Works</span>
               <span className={styles['number']}>{workData?.length}</span>
@@ -46,7 +47,7 @@ export const WorksSectionPc: FC = () => {
 
           <div className={styles['connector']}></div>
 
-          <li className={classNames(styles['item'], { [styles['-focus']]: activeMenu === 'music' })}>
+          <li className={classNames(styles['item'], { [styles.focus]: activeMenu === 'music' })}>
             <button type='button' className={styles['button']} onClick={(): void => handleSelectMenu('music')}>
               <span className={styles['label']}>Music</span>
               <span className={styles['number']}>{musicData?.length}</span>
@@ -55,7 +56,7 @@ export const WorksSectionPc: FC = () => {
 
           <div className={styles['connector']}></div>
 
-          <li className={classNames(styles['item'], { [styles['-focus']]: activeMenu === 'photo' })}>
+          <li className={classNames(styles['item'], { [styles.focus]: activeMenu === 'photo' })}>
             <button type='button' className={styles['button']} onClick={(): void => handleSelectMenu('photo')}>
               <span className={styles['label']}>Photo</span>
               <span className={styles['number']}>0</span>
@@ -65,15 +66,15 @@ export const WorksSectionPc: FC = () => {
       </nav>
 
       <div className={styles['contents']}>
-        <div className={classNames(styles['wrapper'], { [styles['-show']]: activeMenu === 'work' })}>
+        <div className={classNames(styles['wrapper'], { [styles.show]: activeMenu === 'work' })}>
           {workData && <SliderPc id='works' data={workData} />}
         </div>
 
-        <div className={classNames(styles['wrapper'], { [styles['-show']]: activeMenu === 'music' })}>
+        <div className={classNames(styles['wrapper'], { [styles.show]: activeMenu === 'music' })}>
           {musicData && <SliderPc id='musics' data={musicData} />}
         </div>
 
-        <div className={classNames(styles['wrapper'], { [styles['-show']]: activeMenu === 'photo' })}>
+        <div className={classNames(styles['wrapper'], { [styles.show]: activeMenu === 'photo' })}>
           <p>Coming soon・・・</p>
         </div>
       </div>

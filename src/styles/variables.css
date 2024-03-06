@@ -7,6 +7,10 @@
   --color-base-primary: #494949;
   --color-base-secondary: #0d0d0d;
   --color-text: #fff;
+  --color-frontend: #bf5c5c;
+  --color-backend: #5c94bf;
+  --color-infrastructure: #8251a8;
+  --color-other: #588c43;
 
   /* font-size */
   --font-size-h1: 48px;
