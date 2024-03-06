@@ -1,0 +1,19 @@
+.navigation-container {
+  > .menu {
+    position: fixed;
+    top: 37px;
+    right: 62px;
+    z-index: var(--z-index-header-menu);
+    display: flex;
+    gap: 32px;
+    align-items: center;
+
+    > .list > .text {
+      font-size: 18px;
+      line-height: 23px;
+      color: #fff;
+      text-decoration-line: underline;
+      cursor: pointer;
+    }
+  }
+}

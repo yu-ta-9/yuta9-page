@@ -2,12 +2,11 @@ import { useRouter } from 'next/router';
 import { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import { IconGlobal } from '@/components/icons/Global';
+import styles from '@/components/pages/v2/Header/pc/Navigation/LocaleDropdown/index.module.css';
+import { useOutsideClick } from '@/hooks/useOutsideClick';
+
 import type { FC } from 'react';
-
-import styles from './style.module.scss';
-
-import { useOutsideClick } from '../../../../../../../hooks/useOutsideClick';
-import { IconGlobal } from '../../../../../../icons/Global';
 
 const ORIGIN_MENUS = [
   {
@@ -48,9 +47,9 @@ export const LocaleDropdown: FC = () => {
   });
 
   return (
-    <div className={styles['locale-dropdown']} ref={ref}>
+    <div className={styles.localeDropdown} ref={ref}>
       <button
-        className={styles['button']}
+        className={styles.button}
         onClick={openTooltip}
         aria-label={t('header.navigation.localButtonLabel') || ''}
         aria-expanded={isOpen}
@@ -58,15 +57,17 @@ export const LocaleDropdown: FC = () => {
       >
         <IconGlobal width={14} height={14} />
         {buttonLabel}
-        <span className={styles['arrow']}></span>
+        <span className={styles.arrow}></span>
       </button>
 
       {isOpen && (
-        <div role='tooltip' className={styles['dropdown']}>
-          <ul className={styles['menu']}>
+        <div role='tooltip' className={styles.dropdown}>
+          <ul className={styles.menu}>
             {menus.map((menu) => (
-              <li key={menu.locale} className={styles['list']}>
-                <a href={`/${menu.locale}`}>{menu.label}</a>
+              <li key={menu.locale} className={styles.list}>
+                <a className={styles.item} href={`/${menu.locale}`}>
+                  {menu.label}
+                </a>
               </li>
             ))}
           </ul>

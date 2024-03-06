@@ -1,8 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 
-import mixins from '../../styles/mixins.module.scss';
-
-const query = `(max-width: ${mixins.spWidth})`;
+const query = '(max-width: 768px)';
 
 type UseDeviceReturns = {
   isSp: boolean;

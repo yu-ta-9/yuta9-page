@@ -1,6 +1,6 @@
-import type { FC } from 'react';
+import { Navigation } from '@/components/pages/v2/Header/pc/Navigation';
 
-import { Navigation } from './Navigation';
+import type { FC } from 'react';
 
 export const HeaderPc: FC = () => {
   return (

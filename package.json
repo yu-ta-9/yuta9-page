@@ -5,8 +5,11 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
-    "dev": "next dev",
+    "dev": "run-z server, build:css:watch",
+    "server": "next dev",
     "build": "next build",
+    "build:css:watch": "tcm src --camelCase --watch",
+    "build:css": "tcm src --camelCase",
     "start": "next start",
     "lint": "next lint",
     "lint:js": "eslint **/*.{ts,tsx}",
@@ -24,6 +27,8 @@
     "microcms-js-sdk": "^2.3.3",
     "next": "14.1.2",
     "next-i18next": "^13.3.0",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^9.4.0",
     "react": "18.2.0",
     "react-chartjs-2": "^5.0.0",
     "react-dom": "18.2.0",
@@ -50,11 +55,13 @@
     "eslint-plugin-react-hooks": "^4.5.0",
     "eslint-plugin-unused-imports": "^2.0.0",
     "husky": "^8.0.3",
+    "run-z": "^2.0.0",
     "sass": "^1.51.0",
     "stylelint": "^15.10.1",
     "stylelint-config-recess-order": "^3.1.0",
     "stylelint-config-standard-scss": "^11.1.0",
     "stylelint-rscss": "^0.4.0",
+    "typed-css-modules": "^0.9.1",
     "typescript": "5.0.3"
   }
 }

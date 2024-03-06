@@ -1,10 +1,10 @@
 import { useState } from 'react';
 
-import type { FC } from 'react';
+import { Contents } from '@/components/pages/v2/Header/sp/Contents';
+import styles from '@/components/pages/v2/Header/sp/index.module.css';
+import { Opener } from '@/components/pages/v2/Header/sp/Opener';
 
-import { Contents } from './Contents';
-import { Opener } from './Opener';
-import styles from './style.module.scss';
+import type { FC } from 'react';
 
 export const HeaderSp: FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +23,7 @@ export const HeaderSp: FC = () => {
       {isOpen && (
         <>
           <Contents />
-          <div className={styles['overlay-container']} onClick={closeOpen}></div>
+          <div className={styles.overlayContainer} onClick={closeOpen}></div>
         </>
       )}
     </>
