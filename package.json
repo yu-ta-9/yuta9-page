@@ -14,7 +14,8 @@
     "lint": "next lint",
     "lint:js": "eslint **/*.{ts,tsx}",
     "lint:js:fix": "eslint --fix **/*.{ts,tsx}",
-    "lint:css": "stylelint **/*.{css}",
+    "lint:css": "stylelint \"src/**/*.css\"",
+    "lint:css:fix": "stylelint \"src/**/*.css\" --fix",
     "ts:test": "tsc --noEmit",
     "icons": "npx @svgr/cli --no-index -d src/components/icons public/icons"
   },
