@@ -1,7 +1,4 @@
 :root {
-  /* responsive */
-  --sp-width: 768px;
-
   /* color */
   --color-main-v2: #01ff76;
   --color-base-primary: #494949;
@@ -27,6 +24,8 @@
 
   /* z-index */
   --z-index-header-menu: 1000;
+  --z-index-header-menu-contents: 995;
+  --z-index-header-menu-overlay: 990;
   --z-index-about-contents: 10;
   --z-index-about-image: 15;
 

@@ -9,7 +9,7 @@
     margin-left: auto;
     background: linear-gradient(270deg, rgb(1 255 118 / 72%) 0%, rgb(1 255 118 / 0%) 100%);
 
-    @media (width <= var(--sp-width)) {
+    @media (--sp-viewport) {
       width: 100%;
       padding: 32px;
       margin-top: 192px;
@@ -24,7 +24,7 @@
     font-weight: 500;
     line-height: 32px;
 
-    @media (width <= var(--sp-width)) {
+    @media (--sp-viewport) {
       font-size: 20px;
       line-height: 23px;
     }
@@ -37,7 +37,7 @@
     line-height: 26px;
     white-space: pre-wrap;
 
-    @media (width <= var(--sp-width)) {
+    @media (--sp-viewport) {
       font-size: 16px;
       line-height: 23px;
     }

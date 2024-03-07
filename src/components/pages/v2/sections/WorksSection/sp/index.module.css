@@ -40,7 +40,7 @@
       box-shadow: 0 0 0 2px #8e8e8e;
     }
 
-    &.-focus::before {
+    &.focus::before {
       display: inline-block;
       width: 16px;
       height: 16px;

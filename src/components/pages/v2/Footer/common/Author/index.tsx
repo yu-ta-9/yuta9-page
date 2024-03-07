@@ -9,7 +9,7 @@ export const Author: FC = () => {
       <div className={styles.detail}>
         <span className={styles.role}>DESIGN</span>
         <a
-          className={styles['link']}
+          className={styles.link}
           href='https://twitter.com/yanwary_life?s=21&t=wNA-HKgDfalYD-EQxz06uw'
           target='_blank'
           rel='noreferrer'

@@ -14,7 +14,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: var(--z-index-header-menu) - 5;
+  z-index: var(--z-index-header-menu-contents);
   display: flex;
   flex-direction: column;
   gap: 40px;

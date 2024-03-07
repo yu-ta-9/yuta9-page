@@ -1,6 +1,6 @@
 .section-skill {
   > .wrapper {
-    @media (width <= var(--sp-width)) {
+    @media (--sp-viewport) {
       overflow-x: auto;
     }
   }
@@ -12,7 +12,7 @@
     align-items: flex-end;
     padding: 0 40px;
 
-    @media (width <= var(--sp-width)) {
+    @media (--sp-viewport) {
       width: 680px;
     }
   }

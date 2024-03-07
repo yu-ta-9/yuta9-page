@@ -19,6 +19,7 @@
     "icons": "npx @svgr/cli --no-index -d src/components/icons public/icons"
   },
   "dependencies": {
+    "@csstools/postcss-global-data": "^2.1.1",
     "add": "^2.0.6",
     "chart.js": "^3.9.1",
     "classnames": "^2.3.2",
@@ -27,6 +28,7 @@
     "microcms-js-sdk": "^2.3.3",
     "next": "14.1.2",
     "next-i18next": "^13.3.0",
+    "postcss-custom-media": "^10.0.3",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^9.4.0",
     "react": "18.2.0",

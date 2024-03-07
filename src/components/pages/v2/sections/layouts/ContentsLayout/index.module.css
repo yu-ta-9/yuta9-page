@@ -4,7 +4,7 @@
   width: 100vw;
   padding: 140px 48px;
 
-  @media (width <= var(--sp-width)) {
+  @media (--sp-viewport) {
     display: block;
     padding: 96px 16px;
   }
@@ -34,7 +34,7 @@
     transform: translate(-100%, 0%) rotate(-90deg);
     transform-origin: right top;
 
-    @media (width <= var(--sp-width)) {
+    @media (--sp-viewport) {
       font-size: 24px;
       line-height: 28px;
       transform: inherit;
@@ -49,7 +49,7 @@
     flex-direction: column;
     max-width: 1120px;
 
-    @media (width <= var(--sp-width)) {
+    @media (--sp-viewport) {
       margin-top: 40px;
     }
   }

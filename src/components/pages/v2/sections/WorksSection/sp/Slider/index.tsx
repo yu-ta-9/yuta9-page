@@ -42,7 +42,7 @@ const _SliderSp: FC<Props> = ({ id, data }) => {
       {data.map((data, i) => (
         <SwiperSlide key={i} className={styles.swiperSlide}>
           <div className={classNames(styles.contentContainer, { [styles.inactive]: activeIndex !== i })}>
-            <div className={styles['wrapper']}>
+            <div className={styles.wrapper}>
               <iframe
                 key={i}
                 loading='lazy'

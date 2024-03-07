@@ -40,11 +40,11 @@ const _SliderPc: FC<Props> = ({ id, data }) => {
       {data.map((data, i) => (
         <SwiperSlide key={i} className={styles.swiperSlide}>
           <div className={classNames(styles.contentContainer, { [styles.inactive]: activeIndex !== i })}>
-            <div className={styles['wrapper']}>
+            <div className={styles.wrapper}>
               <iframe
                 key={i}
                 loading='lazy'
-                className={classNames(styles['iframe'], { [styles.inactive]: activeIndex !== i })}
+                className={classNames(styles.iframe, { [styles.inactive]: activeIndex !== i })}
                 style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
                 src={data.url}
                 title='YouTube video player'

@@ -24,7 +24,7 @@
     line-height: 76px;
     transform: translateY(-50%);
 
-    @media (width <= var(--sp-width)) {
+    @media (--sp-viewport) {
       left: 20px;
       font-size: 36px;
       line-height: 42px;

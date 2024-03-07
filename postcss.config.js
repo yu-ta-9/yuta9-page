@@ -15,5 +15,7 @@ module.exports = {
         },
       },
     ],
+    ['@csstools/postcss-global-data', { files: ['./src/styles/custom-media-queries.css'] }],
+    'postcss-custom-media',
   ],
 };
