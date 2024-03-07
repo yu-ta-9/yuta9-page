@@ -43,12 +43,16 @@ export const STACK_DATA: { [stack in Stack]: { label: string; key: string }[] } 
       key: 'nodejs',
     },
     {
+      label: 'Vite',
+      key: 'vite',
+    },
+    {
       label: 'Webpack',
       key: 'webpack',
     },
     {
       label: 'Storybook',
-      key: 'storybook',
+      key: 'storybook-origin',
     },
     {
       label: 'Jest',
