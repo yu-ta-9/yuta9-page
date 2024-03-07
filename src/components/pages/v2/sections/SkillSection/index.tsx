@@ -26,7 +26,7 @@ export const SkillSection: FC = () => {
     [t, hoverStack],
   );
 
-  const handleMouseOver = (stack: Stack): void => {
+  const handleSelectStack = (stack: Stack): void => {
     setHoverStack(stack);
   };
 
@@ -39,13 +39,13 @@ export const SkillSection: FC = () => {
           <div className={classNames(styles.axis, styles.second)}></div>
           <div className={classNames(styles.axis, styles.third)}></div>
 
-          <Bar stack='frontend' onMouseOver={handleMouseOver} />
+          <Bar stack='frontend' onSelectStack={handleSelectStack} />
 
-          <Bar stack='backend' onMouseOver={handleMouseOver} />
+          <Bar stack='backend' onSelectStack={handleSelectStack} />
 
-          <Bar stack='infrastructure' onMouseOver={handleMouseOver} />
+          <Bar stack='infrastructure' onSelectStack={handleSelectStack} />
 
-          <Bar stack='other' onMouseOver={handleMouseOver} />
+          <Bar stack='other' onSelectStack={handleSelectStack} />
         </div>
       </div>
       {mounted && <div className={styles.description}>{stackDescription}</div>}
