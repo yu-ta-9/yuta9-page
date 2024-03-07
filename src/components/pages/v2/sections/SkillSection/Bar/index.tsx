@@ -1,5 +1,6 @@
 import classNames from 'classnames';
 
+import { DivButton } from '@/components/common/DivButton';
 import styles from '@/components/pages/v2/sections/SkillSection/Bar/index.module.css';
 import { STACK_DATA } from '@/components/pages/v2/sections/SkillSection/const';
 
@@ -8,7 +9,7 @@ import type { FC } from 'react';
 
 type Props = {
   stack: Stack;
-  onMouseOver: (stack: Stack) => void;
+  onSelectStack: (stack: Stack) => void;
 };
 
 const getLabel = (stack: Stack): string => {
@@ -37,11 +38,13 @@ const getStackClassName = (stack: Stack): string => {
   }
 };
 
-export const Bar: FC<Props> = ({ stack, onMouseOver }) => {
+export const Bar: FC<Props> = ({ stack, onSelectStack }) => {
   return (
-    <div
+    <DivButton
       className={classNames(styles.barContainer, getStackClassName(stack))}
-      onMouseOver={(): void => onMouseOver(stack)}
+      onClick={(): void => onSelectStack(stack)}
+      onMouseOver={(): void => onSelectStack(stack)}
+      onFocus={(): void => onSelectStack(stack)}
     >
       <div className={styles.contents}>
         {STACK_DATA[stack].map((data) => (
@@ -52,6 +55,6 @@ export const Bar: FC<Props> = ({ stack, onMouseOver }) => {
       </div>
 
       <div className={styles.label}>{getLabel(stack)}</div>
-    </div>
+    </DivButton>
   );
 };
