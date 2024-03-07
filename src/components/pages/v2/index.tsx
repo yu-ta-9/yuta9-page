@@ -1,12 +1,12 @@
-import type { FC } from 'react';
+import { Footer } from '@/components/pages/v2/Footer';
+import { Header } from '@/components/pages/v2/Header';
+import { AboutSection } from '@/components/pages/v2/sections/AboutSection';
+import { ContentsLayout } from '@/components/pages/v2/sections/layouts/ContentsLayout';
+import { SkillSection } from '@/components/pages/v2/sections/SkillSection';
+import { TopSection } from '@/components/pages/v2/sections/TopSection';
+import { WorksSection } from '@/components/pages/v2/sections/WorksSection';
 
-import { Footer } from './Footer';
-import { Header } from './Header';
-import { AboutSection } from './sections/AboutSection';
-import { ContentsLayout } from './sections/layouts/ContentsLayout';
-import { SkillSection } from './sections/SkillSection';
-import { TopSection } from './sections/TopSection';
-import { WorksSection } from './sections/WorksSection';
+import type { FC } from 'react';
 
 export const V2: FC = () => {
   return (

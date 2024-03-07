@@ -1,19 +1,17 @@
-@use '~/styles/variables.module.scss' as v;
-@use '~/styles/mixins.module.scss' as m;
-
 .links-container {
   display: flex;
   flex-direction: column;
   gap: 24px;
 
   > .link {
-    @include m.menu;
+    font-family: var(--font-family-menu);
+    font-style: var(--font-style-menu);
   }
 
   > .link > .text {
     font-size: 18px;
     font-weight: 400;
-    color: v.$color-text;
+    color: var(--color-text);
     text-decoration: underline;
     cursor: pointer;
   }

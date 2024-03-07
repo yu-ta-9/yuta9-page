@@ -1,22 +1,24 @@
+import styles from '@/components/pages/v2/sections/TopSection/index.module.css';
+
 import type { FC } from 'react';
 
-import styles from './style.module.scss';
-
 export const TopSection: FC = () => {
-  return (
-    <section className={styles['section-top']}>
-      <video className={styles['video']} src='/videos/sample_video.mp4' autoPlay loop muted></video>
+  console.log('styles:', styles);
 
-      <h1 className={styles['title']}>
+  return (
+    <section className={styles.sectionTop}>
+      <video className={styles.video} src='/videos/sample_video.mp4' autoPlay loop muted></video>
+
+      <h1 className={styles.title}>
         YU-TA-9
         <br />
         portfolio site
       </h1>
 
-      <div className={styles['scroll-bar']}>
+      <div className={styles.scrollBar}>
         <span>scroll</span>
-        <div className={styles['wrapper']}>
-          <div className={styles['bar']}></div>
+        <div className={styles.wrapper}>
+          <div className={styles.bar}></div>
         </div>
       </div>
     </section>

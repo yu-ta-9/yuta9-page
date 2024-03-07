@@ -1,8 +1,6 @@
-@use '~/styles/variables.module.scss' as v;
-
 @keyframes active-item {
   from {
-    background-color: v.$color-main-v2;
+    background-color: var(--color-main-v2);
   }
 
   to {
@@ -42,18 +40,17 @@
       box-shadow: 0 0 0 2px #8e8e8e;
     }
 
-    &.-focus::before {
+    &.focus::before {
       display: inline-block;
       width: 16px;
       height: 16px;
       margin-right: 8px;
-      background-color: v.$color-main-v2;
+      background-color: var(--color-main-v2);
       border-radius: 50%;
       box-shadow: inherit;
     }
   }
 
-  /* stylelint-disable-next-line rscss/class-format */
   > nav > .navbar > .item > .button {
     position: relative;
     display: flex;
@@ -64,19 +61,17 @@
     background-color: transparent;
     border: none;
 
-    &.-focus {
-      color: v.$color-main-v2;
+    &.focus {
+      color: var(--color-main-v2);
     }
   }
 
-  // TODO: refactor
-  /* stylelint-disable-next-line rscss/class-format */
+  /* TODO: refactor */
   > nav > .navbar > .item > .button > .label {
     font-size: 14px;
     font-weight: 700;
   }
 
-  /* stylelint-disable-next-line rscss/class-format */
   > nav > .navbar > .item > .button > .number {
     position: absolute;
     top: 0;
@@ -86,7 +81,7 @@
   }
 
   > .contents {
-    // MEMO: 指定しないとswiperが上手く横幅を定めてくれない
+    /* MEMO: 指定しないとswipeが上手く横幅を定めてくれない */
     min-width: 0;
     margin-top: 16px;
   }
@@ -96,7 +91,7 @@
     height: 100vh;
   }
 
-  > .contents > .wrapper.-show {
+  > .contents > .wrapper.show {
     display: block;
     animation: show 0.3s ease-in;
   }

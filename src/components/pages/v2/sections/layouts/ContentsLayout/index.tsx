@@ -1,8 +1,8 @@
 import classNames from 'classnames';
 
-import type { FC } from 'react';
+import styles from '@/components/pages/v2/sections/layouts/ContentsLayout/index.module.css';
 
-import styles from './style.module.scss';
+import type { FC } from 'react';
 
 type Props = {
   id: string;
@@ -15,15 +15,12 @@ export const ContentsLayout: FC<Props> = ({ id, heading, children, theme = 'prim
   return (
     <section
       id={id}
-      className={classNames(
-        styles['contents-layout'],
-        styles[`${theme === 'primary' ? '-theme-primary' : '-theme-secondary'}`],
-      )}
+      className={classNames(styles.contentsLayout, theme === 'primary' ? styles.themePrimary : styles.themeSecondary)}
     >
-      <div className={styles['wrapper']}>
-        <h2 className={styles['header']}>{heading}</h2>
+      <div className={styles.wrapper}>
+        <h2 className={styles.header}>{heading}</h2>
       </div>
-      <div className={styles['contents']}>{children}</div>
+      <div className={styles.contents}>{children}</div>
     </section>
   );
 };

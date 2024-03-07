@@ -2,12 +2,12 @@ import classNames from 'classnames';
 import { useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import { Bar } from '@/components/pages/v2/sections/SkillSection/Bar';
+import { STACK_DATA } from '@/components/pages/v2/sections/SkillSection/const';
+import styles from '@/components/pages/v2/sections/SkillSection/index.module.css';
+
 import type { Stack } from './type';
 import type { FC } from 'react';
-
-import { Bar } from './Bar';
-import { STACK_DATA } from './const';
-import styles from './style.module.scss';
 
 export const SkillSection: FC = () => {
   const { t } = useTranslation('common');
@@ -31,13 +31,13 @@ export const SkillSection: FC = () => {
   };
 
   return (
-    <div className={styles['section-skill']}>
-      <div className={styles['wrapper']}>
-        <div className={styles['graph']}>
-          <div className={classNames(styles['axis'], styles['-origin'])}></div>
-          <div className={classNames(styles['axis'], styles['-first'])}></div>
-          <div className={classNames(styles['axis'], styles['-second'])}></div>
-          <div className={classNames(styles['axis'], styles['-third'])}></div>
+    <div className={styles.sectionSkill}>
+      <div className={styles.wrapper}>
+        <div className={styles.graph}>
+          <div className={classNames(styles.axis, styles.origin)}></div>
+          <div className={classNames(styles.axis, styles.first)}></div>
+          <div className={classNames(styles.axis, styles.second)}></div>
+          <div className={classNames(styles.axis, styles.third)}></div>
 
           <Bar stack='frontend' onMouseOver={handleMouseOver} />
 
@@ -48,7 +48,7 @@ export const SkillSection: FC = () => {
           <Bar stack='other' onMouseOver={handleMouseOver} />
         </div>
       </div>
-      {mounted && <div className={styles['description']}>{stackDescription}</div>}
+      {mounted && <div className={styles.description}>{stackDescription}</div>}
     </div>
   );
 };

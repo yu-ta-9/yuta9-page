@@ -1,6 +1,3 @@
-@use '~/styles/variables.module.scss' as v;
-@use '~/styles/mixins.module.scss' as m;
-
 .footer-container {
   display: flex;
   justify-content: space-between;
@@ -8,7 +5,7 @@
   height: 300px;
   padding: 64px 168px;
   overflow: hidden;
-  background-color: v.$color-base-secondary;
+  background-color: var(--color-base-secondary);
 
   > .heading {
     display: flex;
@@ -41,12 +38,12 @@
   }
 
   > .go > .text {
-    @include m.menu;
-
     display: inline-block;
     width: 100%;
     height: 100%;
+    font-family: var(--font-family-menu);
     font-size: 20px;
+    font-style: var(--font-style-menu);
     font-weight: 600;
     line-height: 26px;
     cursor: pointer;

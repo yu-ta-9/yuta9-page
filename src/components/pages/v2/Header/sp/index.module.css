@@ -1,0 +1,10 @@
+.overlay-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-index-header-menu-overlay);
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-base-secondary);
+  opacity: 0.7;
+}

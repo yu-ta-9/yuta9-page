@@ -1,23 +1,22 @@
 import { useTranslation } from 'next-i18next';
 
+import { IconGithub } from '@/components/icons/Github';
+import { IconQiita } from '@/components/icons/Qiita';
+import { IconStorybook } from '@/components/icons/Storybook';
+import { IconTwitter } from '@/components/icons/Twitter';
+import { IconZenn } from '@/components/icons/Zenn';
+import styles from '@/components/pages/v2/sections/AboutSection/index.module.css';
+
 import type { FC } from 'react';
-
-import styles from './style.module.scss';
-
-import { IconGithub } from '../../../../icons/Github';
-import { IconQiita } from '../../../../icons/Qiita';
-import { IconStorybook } from '../../../../icons/Storybook';
-import { IconTwitter } from '../../../../icons/Twitter';
-import { IconZenn } from '../../../../icons/Zenn';
 
 export const AboutSection: FC = () => {
   const { t } = useTranslation('common');
 
   return (
     <>
-      <div className={styles['about-wrapper']}>
+      <div className={styles.aboutWrapper}>
         <img
-          className={styles['image']}
+          className={styles.image}
           src='/images/profile.jpg'
           alt='profile'
           // MEMO: 画像保存を防ぐ
@@ -32,12 +31,12 @@ export const AboutSection: FC = () => {
           }}
         />
         {/* MEMO: 画像保存を防ぐ */}
-        <div className={styles['dummy']}></div>
+        <div className={styles.dummy}></div>
 
-        <div className={styles['about']}>
-          <h3 className={styles['title']}>Profile</h3>
-          <p className={styles['description']} dangerouslySetInnerHTML={{ __html: t('top.about.introduction') }}></p>
-          <div className={styles['links']}>
+        <div className={styles.about}>
+          <h3 className={styles.title}>Profile</h3>
+          <p className={styles.description} dangerouslySetInnerHTML={{ __html: t('top.about.introduction') }}></p>
+          <div className={styles.links}>
             <a href='https://twitter.com/yuta9_drumming' target='_blank' rel='noreferrer'>
               <IconTwitter width={24} height={24} />
             </a>
@@ -57,13 +56,13 @@ export const AboutSection: FC = () => {
         </div>
       </div>
 
-      <div className={styles['certification-wrapper']}>
-        <h3 className={styles['title']}>Certification</h3>
-        <ul className={styles['list']}>
-          <li className={styles['item']}>AWS Certified Solutions Architect - Associate (SAA-C02) (since 2020/11/19)</li>
-          <li className={styles['item']}>AWS Certified Developer - Associate (DVA-C01) (since 2021/4/6)</li>
-          <li className={styles['item']}>AWS Certified SysOps Administrator – Associate (SOA-C01) (since 2021/4/22)</li>
-          <li className={styles['item']}>TOEIC - 680</li>
+      <div className={styles.certificationWrapper}>
+        <h3 className={styles.title}>Certification</h3>
+        <ul className={styles.list}>
+          <li className={styles.item}>AWS Certified Solutions Architect - Associate (SAA-C02) (since 2020/11/19)</li>
+          <li className={styles.item}>AWS Certified Developer - Associate (DVA-C01) (since 2021/4/6)</li>
+          <li className={styles.item}>AWS Certified SysOps Administrator – Associate (SOA-C01) (since 2021/4/22)</li>
+          <li className={styles.item}>TOEIC - 680</li>
         </ul>
       </div>
     </>

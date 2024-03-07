@@ -3,11 +3,11 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import type { Data } from '../../../../../../@types/data';
-import type { FC } from 'react';
+import styles from '@/components/pages/v2/sections/WorksSection/sp/index.module.css';
+import { SliderSp } from '@/components/pages/v2/sections/WorksSection/sp/Slider';
 
-import { SliderSp } from './Slider';
-import styles from './style.module.scss';
+import type { Data } from '@/@types/data';
+import type { FC } from 'react';
 
 type Menu = 'work' | 'music' | 'photo';
 
@@ -33,56 +33,56 @@ export const WorksSectionSp: FC = () => {
   };
 
   return (
-    <div className={styles['section-works']}>
+    <div className={styles.sectionWorks}>
       {/* TODO: refactor */}
       <nav aria-label={t('works.navigation.label') || ''}>
-        <ul className={styles['navbar']}>
+        <ul className={styles.navbar}>
           <li
-            className={classNames(styles['item'], { [styles['-focus']]: activeMenu === 'work' })}
+            className={classNames(styles.item, { [styles.focus]: activeMenu === 'work' })}
             role='button'
             onClick={(): void => handleSelectMenu('work')}
           >
             <button
-              className={classNames(styles['button'], { [styles['-focus']]: activeMenu === 'work' })}
+              className={classNames(styles.button, { [styles.focus]: activeMenu === 'work' })}
               onClick={(): void => handleSelectMenu('work')}
             >
-              <span className={styles['label']}>Works</span>
-              <span className={styles['number']}>{workData?.length}</span>
+              <span className={styles.label}>Works</span>
+              <span className={styles.number}>{workData?.length}</span>
             </button>
           </li>
 
-          <li className={classNames(styles['item'], { [styles['-focus']]: activeMenu === 'music' })}>
+          <li className={classNames(styles.item, { [styles.focus]: activeMenu === 'music' })}>
             <button
-              className={classNames(styles['button'], { [styles['-focus']]: activeMenu === 'music' })}
+              className={classNames(styles.button, { [styles.focus]: activeMenu === 'music' })}
               onClick={(): void => handleSelectMenu('music')}
             >
-              <span className={styles['label']}>Music</span>
-              <span className={styles['number']}>{musicData?.length}</span>
+              <span className={styles.label}>Music</span>
+              <span className={styles.number}>{musicData?.length}</span>
             </button>
           </li>
 
-          <li className={classNames(styles['item'], { [styles['-focus']]: activeMenu === 'photo' })}>
+          <li className={classNames(styles.item, { [styles.focus]: activeMenu === 'photo' })}>
             <button
-              className={classNames(styles['button'], { [styles['-focus']]: activeMenu === 'photo' })}
+              className={classNames(styles.button, { [styles.focus]: activeMenu === 'photo' })}
               onClick={(): void => handleSelectMenu('photo')}
             >
-              <span className={styles['label']}>Photo</span>
-              <span className={styles['number']}>0</span>
+              <span className={styles.label}>Photo</span>
+              <span className={styles.number}>0</span>
             </button>
           </li>
         </ul>
       </nav>
 
-      <div className={styles['contents']}>
-        <div className={classNames(styles['wrapper'], { [styles['-show']]: activeMenu === 'work' })}>
+      <div className={styles.contents}>
+        <div className={classNames(styles.wrapper, { [styles.show]: activeMenu === 'work' })}>
           {workData && <SliderSp id='works' data={workData} />}
         </div>
 
-        <div className={classNames(styles['wrapper'], { [styles['-show']]: activeMenu === 'music' })}>
+        <div className={classNames(styles.wrapper, { [styles.show]: activeMenu === 'music' })}>
           {musicData && <SliderSp id='musics' data={musicData} />}
         </div>
 
-        <div className={classNames(styles['wrapper'], { [styles['-show']]: activeMenu === 'photo' })}>
+        <div className={classNames(styles.wrapper, { [styles.show]: activeMenu === 'photo' })}>
           <p>Coming soon・・・</p>
         </div>
       </div>

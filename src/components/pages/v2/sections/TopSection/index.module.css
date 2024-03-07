@@ -1,6 +1,3 @@
-@use '~/styles/variables.module.scss' as v;
-@use '~/styles/mixins.module.scss' as m;
-
 .section-top {
   position: relative;
   width: 100vw;
@@ -17,17 +14,17 @@
   }
 
   > .title {
-    @include m.title;
-
     position: absolute;
     top: 50%;
     left: 160px;
+    font-family: var(--font-family-title);
     font-size: 64px;
+    font-style: var(--font-style-title);
     font-weight: 700;
     line-height: 76px;
     transform: translateY(-50%);
 
-    @include m.sp {
+    @media (--sp-viewport) {
       left: 20px;
       font-size: 36px;
       line-height: 42px;
@@ -62,15 +59,15 @@
     margin-top: 8px;
     overflow: hidden;
     background-color: #d9d9d9;
-  }
 
-  > .wrapper > .bar {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: v.$color-main-v2;
-    animation: stretch 2s infinite;
-    animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    > .bar {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--color-main-v2);
+      animation: stretch 2s infinite;
+      animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    }
   }
 }

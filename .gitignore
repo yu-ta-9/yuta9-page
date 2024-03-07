@@ -30,3 +30,6 @@
 
 # typescript
 *.tsbuildinfo
+
+# my custom
+*.css.d.ts

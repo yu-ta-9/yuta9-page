@@ -6,6 +6,6 @@ My homepage app.
 
 - Next.js
 - TypeScript
-- Sass (CSS Modules)
+- CSS Modules
 - pnpm 8.x
 - Vercel for hosting

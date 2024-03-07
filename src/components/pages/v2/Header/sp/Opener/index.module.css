@@ -1,12 +1,20 @@
-@use '~/styles/variables.module.scss' as v;
-
 .opener-container {
   position: fixed;
   top: 36px;
   right: 16px;
-  z-index: v.$z-index-header-menu;
+  z-index: var(--z-index-header-menu);
   width: 62px;
   height: 14px;
+
+  &.open > .line {
+    &:nth-child(1) {
+      transform: rotate(12deg) translate(0, 7px);
+    }
+
+    &:nth-child(2) {
+      transform: rotate(-12deg) translate(0, -7px);
+    }
+  }
 
   > .line {
     position: absolute;
@@ -14,13 +22,13 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: v.$color-text;
+    background-color: var(--color-text);
     transition: all 0.3s;
 
     &:nth-child(1) {
       top: 0;
 
-      &.-open {
+      &.open {
         transform: rotate(45deg) translate(0, 7px);
       }
     }
@@ -28,19 +36,9 @@
     &:nth-child(2) {
       top: 14px;
 
-      &.-open {
+      &.open {
         transform: rotate(-45deg) translate(0, 7px);
       }
-    }
-  }
-
-  &.-open > .line {
-    &:nth-child(1) {
-      transform: rotate(12deg) translate(0, 7px);
-    }
-
-    &:nth-child(2) {
-      transform: rotate(-12deg) translate(0, -7px);
     }
   }
 }

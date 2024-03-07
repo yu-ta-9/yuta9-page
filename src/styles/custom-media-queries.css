@@ -1,0 +1,2 @@
+/* MEMO: powered by `postcss-custom-media` and `@csstools/postcss-global-data` */
+@custom-media --sp-viewport (max-width: 768px);

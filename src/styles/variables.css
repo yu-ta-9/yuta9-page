@@ -1,0 +1,37 @@
+:root {
+  /* color */
+  --color-main-v2: #01ff76;
+  --color-base-primary: #494949;
+  --color-base-secondary: #0d0d0d;
+  --color-text: #fff;
+  --color-frontend: #bf5c5c;
+  --color-backend: #5c94bf;
+  --color-infrastructure: #8251a8;
+  --color-other: #588c43;
+
+  /* font-size */
+  --font-size-h1: 48px;
+  --font-size-h2: 36px;
+  --font-size-h3: 24px;
+  --font-size-normal: 16px;
+
+  /* font-weight */
+  --font-weight-middle-bold: 700;
+  --font-weight-bold: 900;
+
+  /* line-height */
+  --line-height: 1.7;
+
+  /* z-index */
+  --z-index-header-menu: 1000;
+  --z-index-header-menu-contents: 995;
+  --z-index-header-menu-overlay: 990;
+  --z-index-about-contents: 10;
+  --z-index-about-image: 15;
+
+  /* font */
+  --font-family-title: 'Ubuntu';
+  --font-style-title: normal;
+  --font-family-menu: 'IBM Plex Mono';
+  --font-style-menu: normal;
+}
