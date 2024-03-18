@@ -37,7 +37,7 @@
     "react-dom": "18.2.0",
     "react-i18next": "^12.2.0",
     "react-scroll": "^1.8.9",
-    "reset-css": "^5.0.1",
+    "reset-css": "^5.0.2",
     "swiper": "8.4.6"
   },
   "devDependencies": {
