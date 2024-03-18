@@ -122,8 +122,8 @@ devDependencies:
     specifier: ^15.10.1
     version: 15.10.1
   stylelint-config-recess-order:
-    specifier: ^3.1.0
-    version: 3.1.0(stylelint@15.10.1)
+    specifier: ^4.6.0
+    version: 4.6.0(stylelint@15.10.1)
   stylelint-config-standard-scss:
     specifier: ^11.1.0
     version: 11.1.0(postcss@8.4.35)(stylelint@15.10.1)
@@ -4349,10 +4349,10 @@ packages:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
 
-  /postcss-sorting@7.0.1(postcss@8.4.35):
-    resolution: {integrity: sha512-iLBFYz6VRYyLJEJsBJ8M3TCqNcckVzz4wFounSc5Oez35ogE/X+aoC5fFu103Ot7NyvjU3/xqIXn93Gp3kJk4g==}
+  /postcss-sorting@8.0.2(postcss@8.4.35):
+    resolution: {integrity: sha512-M9dkSrmU00t/jK7rF6BZSZauA5MAaBW4i5EnJXspMwt4iqTh/L9j6fgMnbElEOfyRyfLfVbIHj/R52zHzAPe1Q==}
     peerDependencies:
-      postcss: ^8.3.9
+      postcss: ^8.4.20
     dependencies:
       postcss: 8.4.35
     dev: true
@@ -4893,13 +4893,13 @@ packages:
       react: 18.2.0
     dev: false
 
-  /stylelint-config-recess-order@3.1.0(stylelint@15.10.1):
-    resolution: {integrity: sha512-LXR6zD5O9cS1a9gbLbuKvWLs7qmHj4xm5MQ5KhhwZPMhtQP9da3F6Jsp/NAUdsAwDQEnT1ShU16YVdgN6p4a/w==}
+  /stylelint-config-recess-order@4.6.0(stylelint@15.10.1):
+    resolution: {integrity: sha512-V76fhv3YtcNXh/hyAuAdSzi5FmcrG54Mp2AThJ3D/PTMTSYzUPd7GIhP6z9mTqnRhmkk6YTfcu/JWB8h+Yrcaw==}
     peerDependencies:
-      stylelint: '>=14'
+      stylelint: '>=15'
     dependencies:
       stylelint: 15.10.1
-      stylelint-order: 5.0.0(stylelint@15.10.1)
+      stylelint-order: 6.0.4(stylelint@15.10.1)
     dev: true
 
   /stylelint-config-recommended-scss@13.1.0(postcss@8.4.35)(stylelint@15.10.1):
@@ -4952,13 +4952,13 @@ packages:
       stylelint-config-recommended: 13.0.0(stylelint@15.10.1)
     dev: true
 
-  /stylelint-order@5.0.0(stylelint@15.10.1):
-    resolution: {integrity: sha512-OWQ7pmicXufDw5BlRqzdz3fkGKJPgLyDwD1rFY3AIEfIH/LQY38Vu/85v8/up0I+VPiuGRwbc2Hg3zLAsJaiyw==}
+  /stylelint-order@6.0.4(stylelint@15.10.1):
+    resolution: {integrity: sha512-0UuKo4+s1hgQ/uAxlYU4h0o0HS4NiQDud0NAUNI0aa8FJdmYHA5ZZTFHiV5FpmE3071e9pZx5j0QpVJW5zOCUA==}
     peerDependencies:
-      stylelint: ^14.0.0
+      stylelint: ^14.0.0 || ^15.0.0 || ^16.0.1
     dependencies:
       postcss: 8.4.35
-      postcss-sorting: 7.0.1(postcss@8.4.35)
+      postcss-sorting: 8.0.2(postcss@8.4.35)
       stylelint: 15.10.1
     dev: true
 
