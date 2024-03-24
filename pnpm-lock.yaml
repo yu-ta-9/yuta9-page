@@ -57,8 +57,8 @@ dependencies:
     specifier: ^1.8.9
     version: 1.8.9(react-dom@18.2.0)(react@18.2.0)
   reset-css:
-    specifier: ^5.0.1
-    version: 5.0.1
+    specifier: ^5.0.2
+    version: 5.0.2
   swiper:
     specifier: 8.4.6
     version: 8.4.6
@@ -4544,8 +4544,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /reset-css@5.0.1:
-    resolution: {integrity: sha512-VyuJdNFfp5x/W6e5wauJM59C02Vs0P22sxzZGhQMPaqu/NGTeFxlBFOOw3eq9vQd19gIDdZp7zi89ylyKOJ33Q==}
+  /reset-css@5.0.2:
+    resolution: {integrity: sha512-YtgUGSq5z5W0NPSjsBW7ys7rtWa8P8AiE7S6Fg3d1TQCPpAodgYyLuZYlU0AOsLtprk/fC9ormHN/0pAavVIDw==}
     dev: false
 
   /resolve-from@4.0.0:
