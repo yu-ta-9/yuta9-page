@@ -115,6 +115,9 @@ devDependencies:
   husky:
     specifier: ^8.0.3
     version: 8.0.3
+  prettier:
+    specifier: ^3.2.5
+    version: 3.2.5
   run-z:
     specifier: ^2.0.0
     version: 2.0.0
@@ -4377,6 +4380,12 @@ packages:
   /prettier@2.8.7:
     resolution: {integrity: sha512-yPngTo3aXUUmyuTjeTUT75txrf+aMh9FiD7q9ZE/i6r0bPb22g4FsE6Y338PQX1bmfy08i9QQCB7/rcUAVntfw==}
     engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
+
+  /prettier@3.2.5:
+    resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==}
+    engines: {node: '>=14'}
     hasBin: true
     dev: true
 
