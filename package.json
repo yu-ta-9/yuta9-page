@@ -24,7 +24,7 @@
   "dependencies": {
     "@csstools/postcss-global-data": "^2.1.1",
     "add": "^2.0.6",
-    "chart.js": "^3.9.1",
+    "chart.js": "^4.4.2",
     "classnames": "^2.5.1",
     "date-fns": "^2.30.0",
     "i18next": "^22.4.14",
