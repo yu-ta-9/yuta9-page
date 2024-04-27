@@ -9,3 +9,8 @@ updates:
     directory: '/' # Location of package manifests
     schedule:
       interval: 'weekly'
+      day: 'monday'
+      time: '09:30'
+      timezone: 'Asia/Tokyo'
+    versioning-strategy: 'lockfile-only'
+    open-pull-requests-limit: 10 # MEMO: デフォルトから引き上げる
