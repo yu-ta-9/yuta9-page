@@ -3,7 +3,7 @@ import { useTranslation } from 'next-i18next';
 import { IconGithub } from '@/components/icons/Github';
 import { IconQiita } from '@/components/icons/Qiita';
 import { IconStorybook } from '@/components/icons/Storybook';
-import { IconTwitter } from '@/components/icons/Twitter';
+import { IconX } from '@/components/icons/X';
 import { IconZenn } from '@/components/icons/Zenn';
 import styles from '@/components/pages/v2/sections/AboutSection/index.module.css';
 
@@ -38,7 +38,7 @@ export const AboutSection: FC = () => {
           <p className={styles.description} dangerouslySetInnerHTML={{ __html: t('top.about.introduction') }}></p>
           <div className={styles.links}>
             <a href='https://twitter.com/yuta9_drumming' target='_blank' rel='noreferrer'>
-              <IconTwitter width={24} height={24} />
+              <IconX width={24} height={24} />
             </a>
             <a href='https://github.com/yu-ta-9' target='_blank' rel='noreferrer'>
               <IconGithub width={24} height={24} />
