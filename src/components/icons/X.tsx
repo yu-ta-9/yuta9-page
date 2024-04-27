@@ -1,4 +1,5 @@
 import { forwardRef } from 'react';
+
 import type { Ref, SVGProps } from 'react';
 const X = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>): JSX.Element => (
   <svg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 30 30' ref={ref} {...props}>
