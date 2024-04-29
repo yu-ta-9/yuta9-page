@@ -69,7 +69,7 @@ devDependencies:
     version: 7.0.0
   '@types/chart.js':
     specifier: ^2.9.37
-    version: 2.9.37
+    version: 2.9.41
   '@types/node':
     specifier: 20.10.3
     version: 20.10.3
@@ -1202,8 +1202,8 @@ packages:
     engines: {node: '>=10.13.0'}
     dev: true
 
-  /@types/chart.js@2.9.37:
-    resolution: {integrity: sha512-9bosRfHhkXxKYfrw94EmyDQcdjMaQPkU1fH2tDxu8DWXxf1mjzWQAV4laJF51ZbC2ycYwNDvIm1rGez8Bug0vg==}
+  /@types/chart.js@2.9.41:
+    resolution: {integrity: sha512-3dvkDvueckY83UyUXtJMalYoH6faOLkWQoaTlJgB4Djde3oORmNP0Jw85HtzTuXyliUHcdp704s0mZFQKio/KQ==}
     dependencies:
       moment: 2.29.4
     dev: true
