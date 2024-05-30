@@ -31,7 +31,7 @@ dependencies:
     version: 14.1.2(@babel/core@7.21.3)(react-dom@18.2.0)(react@18.2.0)
   next-i18next:
     specifier: ^13.3.0
-    version: 13.3.0(i18next@22.5.1)(next@14.1.2)(react-i18next@12.2.0)(react@18.2.0)
+    version: 13.3.0(i18next@22.5.1)(next@14.1.2)(react-i18next@12.3.1)(react@18.2.0)
   postcss-custom-media:
     specifier: ^10.0.3
     version: 10.0.3(postcss@8.4.35)
@@ -52,7 +52,7 @@ dependencies:
     version: 18.2.0(react@18.2.0)
   react-i18next:
     specifier: ^12.2.0
-    version: 12.2.0(i18next@22.5.1)(react-dom@18.2.0)(react@18.2.0)
+    version: 12.3.1(i18next@22.5.1)(react-dom@18.2.0)(react@18.2.0)
   react-scroll:
     specifier: ^1.9.0
     version: 1.9.0(react-dom@18.2.0)(react@18.2.0)
@@ -3619,7 +3619,7 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
 
-  /next-i18next@13.3.0(i18next@22.5.1)(next@14.1.2)(react-i18next@12.2.0)(react@18.2.0):
+  /next-i18next@13.3.0(i18next@22.5.1)(next@14.1.2)(react-i18next@12.3.1)(react@18.2.0):
     resolution: {integrity: sha512-X4kgi51BCOoGdKbv87eZ8OU7ICQDg5IP+T5fNjqDY3os9ea0OKTY4YpAiVFiwcI9XimcUmSPbKO4a9jFUyYSgg==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -3636,7 +3636,7 @@ packages:
       i18next-fs-backend: 2.1.1
       next: 14.1.2(@babel/core@7.21.3)(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
-      react-i18next: 12.2.0(i18next@22.5.1)(react-dom@18.2.0)(react@18.2.0)
+      react-i18next: 12.3.1(i18next@22.5.1)(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
   /next@14.1.2(@babel/core@7.21.3)(react-dom@18.2.0)(react@18.2.0):
@@ -4416,8 +4416,8 @@ packages:
       scheduler: 0.23.0
     dev: false
 
-  /react-i18next@12.2.0(i18next@22.5.1)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-5XeVgSygaGfyFmDd2WcXvINRw2WEC1XviW1LXY/xLOEMzsCFRwKqfnHN+hUjla8ZipbVJR27GCMSuTr0BhBBBQ==}
+  /react-i18next@12.3.1(i18next@22.5.1)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-5v8E2XjZDFzK7K87eSwC7AJcAkcLt5xYZ4+yTPDAW1i7C93oOY1dnr4BaQM7un4Hm+GmghuiPvevWwlca5PwDA==}
     peerDependencies:
       i18next: '>= 19.0.0'
       react: '>= 16.8.0'
@@ -4429,7 +4429,7 @@ packages:
       react-native:
         optional: true
     dependencies:
-      '@babel/runtime': 7.21.5
+      '@babel/runtime': 7.24.0
       html-parse-stringify: 3.0.1
       i18next: 22.5.1
       react: 18.2.0
