@@ -1,5 +1,10 @@
 [
   {
+    "title": "Bookshelf Image Creation App",
+    "url": "https://www.youtube.com/embed/GHCf0u5Pt1w?si=hnl63icOaYdt5qfX",
+    "caption": "An app that allows you to post bookshelf images just by pasting a URL. Go/Gin."
+  },
+  {
     "title": "Estimate Form Creation App - Mr. Pricer",
     "url": "https://www.youtube-nocookie.com/embed/ZTixlAgww-g",
     "caption": "An app that assists in the process of estimating. Next.js/TypeScript/Prisma/PostgreSQL/Vercel"

@@ -1,5 +1,10 @@
 [
   {
+    "title": "本棚画像作成アプリ",
+    "url": "https://www.youtube.com/embed/GHCf0u5Pt1w?si=hnl63icOaYdt5qfX",
+    "caption": "本棚画像をURLを貼るだけで掲載できるアプリ。Go/Gin"
+  },
+  {
     "title": "見積もりフォーム作成アプリ「Mr. Pricer」",
     "url": "https://www.youtube-nocookie.com/embed/ZTixlAgww-g",
     "caption": "見積もりのやり取りを手助けするアプリ。Next.js/TypeScript/Prisma/PostgreSQL/Vercel"
