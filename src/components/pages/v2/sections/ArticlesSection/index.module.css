@@ -1,0 +1,7 @@
+.section-articles {
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 24px;
+}

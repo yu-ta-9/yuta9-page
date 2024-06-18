@@ -17,6 +17,11 @@ export const Navigation: FC = () => {
           </a>
         </li>
         <li className={styles.list}>
+          <a className={styles.text} href='#articles' tabIndex={0}>
+            {t('header.navigation.articles')}
+          </a>
+        </li>
+        <li className={styles.list}>
           <a className={styles.text} href='#skill' tabIndex={0}>
             {t('header.navigation.skill')}
           </a>

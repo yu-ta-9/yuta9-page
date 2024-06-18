@@ -14,13 +14,16 @@ export const Contents: FC = () => {
     <nav className={styles.contentsContainer} aria-label={t('header.navigation.label') || ''}>
       <ul className={styles.menu}>
         <li className={styles.list}>
-          <a href='#about'>ABOUT</a>
+          <a href='#about'>{t('header.navigation.about')}</a>
         </li>
         <li className={styles.list}>
-          <a href='#skill'>SKILL</a>
+          <a href='#articles'>{t('header.navigation.articles')}</a>
         </li>
         <li className={styles.list}>
-          <a href='#works'>WORKS</a>
+          <a href='#skill'>{t('header.navigation.skill')}</a>
+        </li>
+        <li className={styles.list}>
+          <a href='#works'>{t('header.navigation.works')}</a>
         </li>
       </ul>
       <div className={styles.locale}>

@@ -4,6 +4,7 @@
       "label": "メインメニュー",
       "localButtonLabel": "言語変更",
       "about": "ABOUT",
+      "articles": "ARTICLES",
       "skill": "SKILL",
       "works": "WORKS"
     }
@@ -14,6 +15,18 @@
     },
     "skill": {
       "noSelect": "※ホバーすると詳細が表示されます"
+    }
+  },
+  "articles": {
+    "description": "最近の投稿",
+    "noArticles": "※最近の投稿はありません",
+    "recent": {
+      "label": "最近の投稿",
+      "noArticles": "※最近の投稿はありません"
+    },
+    "orderByLikes": {
+      "label": "いいねの多い順",
+      "noArticles": "※いいねされた投稿はありません"
     }
   },
   "works": {
