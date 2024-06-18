@@ -4,6 +4,7 @@
       "label": "Main menu",
       "localButtonLabel": "Change local",
       "about": "ABOUT",
+      "articles": "ARTICLES",
       "skill": "SKILL",
       "works": "WORKS"
     }
@@ -14,6 +15,16 @@
     },
     "skill": {
       "noSelect": "*Hover over to see details"
+    }
+  },
+  "articles": {
+    "recent": {
+      "label": "Recent articles",
+      "noArticles": "※No recent articles."
+    },
+    "orderByLikes": {
+      "label": "Articles ordered by likes",
+      "noArticles": "※No articles ordered by likes."
     }
   },
   "works": {
