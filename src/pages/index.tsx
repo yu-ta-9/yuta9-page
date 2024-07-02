@@ -37,5 +37,6 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
       ...(await serverSideTranslations(locale || 'ja', ['common'])),
       zennArticles: zennArticlesJson.articles,
     },
+    revalidate: 3600,
   };
 };
