@@ -4,5 +4,5 @@ module.exports = {
     defaultLocale: 'ja',
   },
   // eslint-disable-next-line @typescript-eslint/no-var-requires
-  localePath: require('path').resolve('./public/locales')
+  localePath: require('path').resolve('./public/locales'),
 };
