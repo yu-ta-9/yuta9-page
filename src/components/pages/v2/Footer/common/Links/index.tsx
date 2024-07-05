@@ -11,6 +11,11 @@ export const Links: FC = () => {
         </a>
       </li>
       <li className={styles.link}>
+        <a className={styles.text} href='#articles'>
+          ARTICLES
+        </a>
+      </li>
+      <li className={styles.link}>
         <a className={styles.text} href='#skill'>
           SKILL
         </a>
