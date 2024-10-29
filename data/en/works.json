@@ -1,5 +1,10 @@
 [
   {
+    "title": "A site where you can learn life hacks!! - Chietto!",
+    "url": "https://www.youtube.com/embed/E_v7Tfg3N4A?si=onM1rRSDzBKRBZrc",
+    "caption": "A site where you can learn life hacks. Remix/TypeScript/TailwindCSS/Prisma/PostgreSQL/Vercel"
+  },
+  {
     "title": "Bookshelf Image Creation App",
     "url": "https://www.youtube.com/embed/GHCf0u5Pt1w?si=hnl63icOaYdt5qfX",
     "caption": "An app that allows you to post bookshelf images just by pasting a URL. Go/Gin."
