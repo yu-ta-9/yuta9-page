@@ -5,6 +5,7 @@
   z-index: var(--z-index-header-menu);
   width: 62px;
   height: 14px;
+  cursor: pointer;
 
   &.open > .line {
     &:nth-child(1) {
