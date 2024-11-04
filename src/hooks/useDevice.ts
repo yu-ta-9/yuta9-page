@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 
-const query = '(max-width: 768px)';
+const query = '(max-width: 1024px)';
 
 type UseDeviceReturns = {
   isSp: boolean;
