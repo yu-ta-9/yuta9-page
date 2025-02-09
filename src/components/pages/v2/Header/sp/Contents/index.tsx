@@ -17,10 +17,10 @@ export const Contents: FC = () => {
           <a href='#about'>{t('header.navigation.about')}</a>
         </li>
         <li className={styles.list}>
-          <a href='#articles'>{t('header.navigation.articles')}</a>
+          <a href='#skill'>{t('header.navigation.skill')}</a>
         </li>
         <li className={styles.list}>
-          <a href='#skill'>{t('header.navigation.skill')}</a>
+          <a href='#articles'>{t('header.navigation.articles')}</a>
         </li>
         <li className={styles.list}>
           <a href='#works'>{t('header.navigation.works')}</a>
