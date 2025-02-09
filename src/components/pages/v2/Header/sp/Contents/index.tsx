@@ -8,9 +8,9 @@ import type { FC } from 'react';
 
 type Props = {
   onHeaderClose: () => void;
-}
+};
 
-export const Contents: FC<Props> = ({onHeaderClose}) => {
+export const Contents: FC<Props> = ({ onHeaderClose }) => {
   const { locale } = useRouter();
   const { t } = useTranslation('common');
 
@@ -18,16 +18,24 @@ export const Contents: FC<Props> = ({onHeaderClose}) => {
     <nav className={styles.contentsContainer} aria-label={t('header.navigation.label') || ''}>
       <ul className={styles.menu}>
         <li className={styles.list}>
-          <a href='#about' onClick={onHeaderClose}>{t('header.navigation.about')}</a>
+          <a href='#about' onClick={onHeaderClose}>
+            {t('header.navigation.about')}
+          </a>
         </li>
         <li className={styles.list}>
-          <a href='#skill' onClick={onHeaderClose}>{t('header.navigation.skill')}</a>
+          <a href='#skill' onClick={onHeaderClose}>
+            {t('header.navigation.skill')}
+          </a>
         </li>
         <li className={styles.list}>
-          <a href='#articles' onClick={onHeaderClose}>{t('header.navigation.articles')}</a>
+          <a href='#articles' onClick={onHeaderClose}>
+            {t('header.navigation.articles')}
+          </a>
         </li>
         <li className={styles.list}>
-          <a href='#works' onClick={onHeaderClose}>{t('header.navigation.works')}</a>
+          <a href='#works' onClick={onHeaderClose}>
+            {t('header.navigation.works')}
+          </a>
         </li>
       </ul>
       <div className={styles.locale}>

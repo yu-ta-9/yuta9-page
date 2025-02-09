@@ -18,8 +18,7 @@ export const SkillSection: FC = () => {
   const [hoverStack, setHoverStack] = useState<Stack>();
 
   const stackDescription = useMemo(
-    () =>
-      hoverStack !== undefined ? STACK_DATA[hoverStack].map((data) => data.label).join(' / ') : "",
+    () => (hoverStack !== undefined ? STACK_DATA[hoverStack].map((data) => data.label).join(' / ') : ''),
     [hoverStack],
   );
 
