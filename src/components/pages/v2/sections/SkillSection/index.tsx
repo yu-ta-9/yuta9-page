@@ -1,6 +1,5 @@
 import classNames from 'classnames';
 import { useEffect, useMemo, useState } from 'react';
-import { useTranslation } from 'react-i18next';
 
 import { Bar } from '@/components/pages/v2/sections/SkillSection/Bar';
 import { STACK_DATA } from '@/components/pages/v2/sections/SkillSection/const';
@@ -10,8 +9,6 @@ import type { Stack } from './type';
 import type { FC } from 'react';
 
 export const SkillSection: FC = () => {
-  const { t } = useTranslation('common');
-
   // MEMO: https://github.com/vercel/next.js/discussions/17443#discussioncomment-637879
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
@@ -21,9 +18,8 @@ export const SkillSection: FC = () => {
   const [hoverStack, setHoverStack] = useState<Stack>();
 
   const stackDescription = useMemo(
-    () =>
-      hoverStack !== undefined ? STACK_DATA[hoverStack].map((data) => data.label).join(' / ') : t('top.skill.noSelect'),
-    [t, hoverStack],
+    () => (hoverStack !== undefined ? STACK_DATA[hoverStack].map((data) => data.label).join(' / ') : ''),
+    [hoverStack],
   );
 
   const handleSelectStack = (stack: Stack): void => {

@@ -9,6 +9,7 @@ const nextConfig = {
     domains: ['images.microcms-assets.io'],
   },
   // MEMO: CSS Modulesのクラス名をキャメルケースにする
+  // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
   webpack: (config) => {
     config.module.rules
       .find(({ oneOf }) => !!oneOf)

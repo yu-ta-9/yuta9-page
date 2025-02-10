@@ -21,12 +21,12 @@ export const V2: FC = () => {
           <AboutSection />
         </ContentsLayout>
 
-        <ContentsLayout id='articles' heading='ARTICLES' theme='secondary'>
-          <ArticlesSection />
+        <ContentsLayout id='skill' heading='SKILL' theme='secondary'>
+          <SkillSection />
         </ContentsLayout>
 
-        <ContentsLayout id='skill' heading='SKILL' theme='primary'>
-          <SkillSection />
+        <ContentsLayout id='articles' heading='ARTICLES' theme='primary'>
+          <ArticlesSection />
         </ContentsLayout>
 
         <ContentsLayout id='works' heading='WORKS' theme='secondary'>
