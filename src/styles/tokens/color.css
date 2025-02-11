@@ -91,6 +91,7 @@
 
   /** semantic colors */
   --color-text: var(--color-light-500);
+  --color-text-disabled: var(--color-light-600);
   --color-background-primary: var(--color-base-primary-500);
   --color-background-primary-hover: var(--color-base-primary-600);
   --color-background-secondary: var(--color-base-secondary-500);

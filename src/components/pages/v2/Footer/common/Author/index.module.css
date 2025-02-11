@@ -4,7 +4,7 @@
   align-items: flex-end;
   font-size: 12px;
   font-weight: 400;
-  color: #8e8e8e;
+  color: var(--color-text-disabled);
 
   @media (--sp-viewport) {
     flex-direction: column;

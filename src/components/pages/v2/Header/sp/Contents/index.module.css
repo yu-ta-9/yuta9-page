@@ -49,7 +49,7 @@
   }
 
   > .locale > .selected {
-    color: #8e8e8e;
+    color: var(--color-text-disabled);
     pointer-events: none;
   }
 }
