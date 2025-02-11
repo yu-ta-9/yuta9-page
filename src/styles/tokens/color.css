@@ -11,7 +11,6 @@
   --color-red-700: #6e2b2b;
   --color-red-800: #491d1d;
   --color-red-900: #250e0e;
-
   --color-blue-500: #5c94bf;
   --color-blue-50: #edf3f8;
   --color-blue-950: #070d12;
@@ -23,7 +22,6 @@
   --color-blue-700: #2b516e;
   --color-blue-800: #1d3649;
   --color-blue-900: #0e1b25;
-
   --color-purple-500: #8251a8;
   --color-purple-50: #f3eef7;
   --color-purple-950: #0d0811;
@@ -35,7 +33,6 @@
   --color-purple-700: #503267;
   --color-purple-800: #352145;
   --color-purple-900: #1b1122;
-
   --color-green-500: #588c43;
   --color-green-50: #f0f7ee;
   --color-green-950: #0b1108;
@@ -47,7 +44,6 @@
   --color-green-700: #416831;
   --color-green-800: #2b4521;
   --color-green-900: #162310;
-
   --color-main-500: #01ff78;
   --color-main-50: #e5fff1;
   --color-main-950: #001a0c;
@@ -59,41 +55,38 @@
   --color-main-700: #009947;
   --color-main-800: #006630;
   --color-main-900: #003318;
-
   --color-base-primary-500: #494949;
   --color-base-primary-50: #f2f2f2;
   --color-base-primary-950: #0d0d0d;
   --color-base-primary-100: #e6e6e6;
-  --color-base-primary-200: #cccccc;
+  --color-base-primary-200: #ccc;
   --color-base-primary-300: #b3b3b3;
-  --color-base-primary-400: #999999;
-  --color-base-primary-600: #666666;
+  --color-base-primary-400: #999;
+  --color-base-primary-600: #666;
   --color-base-primary-700: #4d4d4d;
-  --color-base-primary-800: #333333;
+  --color-base-primary-800: #333;
   --color-base-primary-900: #1a1a1a;
-
   --color-base-secondary-500: #3a3a3a;
   --color-base-secondary-50: #f2f2f2;
   --color-base-secondary-950: #0d0d0d;
   --color-base-secondary-100: #e6e6e6;
-  --color-base-secondary-200: #cccccc;
+  --color-base-secondary-200: #ccc;
   --color-base-secondary-300: #b3b3b3;
-  --color-base-secondary-400: #999999;
-  --color-base-secondary-600: #666666;
+  --color-base-secondary-400: #999;
+  --color-base-secondary-600: #666;
   --color-base-secondary-700: #4d4d4d;
-  --color-base-secondary-800: #333333;
+  --color-base-secondary-800: #333;
   --color-base-secondary-900: #1a1a1a;
-
-  --color-light-500: #ffffff;
+  --color-light-500: #fff;
   --color-light-50: #f2f2f2;
   --color-light-950: #0d0d0d;
   --color-light-100: #e6e6e6;
-  --color-light-200: #cccccc;
+  --color-light-200: #ccc;
   --color-light-300: #b3b3b3;
-  --color-light-400: #999999;
-  --color-light-600: #666666;
+  --color-light-400: #999;
+  --color-light-600: #666;
   --color-light-700: #4d4d4d;
-  --color-light-800: #333333;
+  --color-light-800: #333;
   --color-light-900: #1a1a1a;
 
   /** semantic colors */
