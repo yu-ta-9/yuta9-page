@@ -99,5 +99,7 @@
   /** semantic colors */
   --color-text: var(--color-light-500);
   --color-background-primary: var(--color-base-primary-500);
+  --color-background-primary-hover: var(--color-base-primary-600);
   --color-background-secondary: var(--color-base-secondary-500);
+  --color-background-secondary-hover: var(--color-base-secondary-600);
 }
