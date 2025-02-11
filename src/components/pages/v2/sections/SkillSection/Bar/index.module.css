@@ -17,42 +17,42 @@
 
   &.frontend {
     height: 413px;
-    background-color: var(--color-frontend);
+    background-color: var(--color-red-500);
     transition: all 0.3s;
 
     &:hover,
     &:focus {
-      background-color: color-mix(in srgb, white 10%, var(--color-frontend));
+      background-color: color-mix(in srgb, white 10%, var(--color-red-500));
     }
   }
 
   &.backend {
     height: 324px;
-    background-color: var(--color-backend);
+    background-color: var(--color-blue-500);
 
     &:hover,
     &:focus {
-      background-color: color-mix(in srgb, white 10%, var(--color-backend));
+      background-color: color-mix(in srgb, white 10%, var(--color-blue-500));
     }
   }
 
   &.infrastructure {
     height: 271px;
-    background-color: var(--color-infrastructure);
+    background-color: var(--color-purple-500);
 
     &:hover,
     &:focus {
-      background-color: color-mix(in srgb, white 10%, var(--color-infrastructure));
+      background-color: color-mix(in srgb, white 10%, var(--color-purple-500));
     }
   }
 
   &.other {
     height: 180px;
-    background-color: var(--color-other);
+    background-color: var(--color-green-500);
 
     &:hover,
     &:focus {
-      background-color: color-mix(in srgb, white 10%, var(--color-other));
+      background-color: color-mix(in srgb, white 10%, var(--color-green-500));
     }
   }
 
@@ -70,7 +70,7 @@
     width: 40px;
     height: 40px;
     padding: 8px;
-    background-color: var(--color-light);
+    background-color: var(--color-light-500);
     filter: drop-shadow(2px 4px 2px black);
     border-radius: 9999px;
   }

@@ -99,6 +99,6 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 26px;
-    border-bottom: 1px solid var(--color-main-v2);
+    border-bottom: 1px solid var(--color-main-500);
   }
 }

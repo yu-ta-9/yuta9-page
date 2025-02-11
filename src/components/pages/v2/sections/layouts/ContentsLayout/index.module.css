@@ -11,11 +11,11 @@
   }
 
   &.theme-primary {
-    background-color: var(--color-base-primary);
+    background-color: var(--color-background-primary);
   }
 
   &.theme-secondary {
-    background-color: #3a3a3a;
+    background-color: var(--color-background-secondary);
   }
 
   > .wrapper {

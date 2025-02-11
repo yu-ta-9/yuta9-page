@@ -1,6 +1,6 @@
 @keyframes active-item {
   from {
-    background-color: var(--color-main-v2);
+    background-color: var(--color-main-500);
   }
 
   to {
@@ -45,7 +45,7 @@
       width: 16px;
       height: 16px;
       margin-right: 8px;
-      background-color: var(--color-main-v2);
+      background-color: var(--color-main-500);
       border-radius: 50%;
       box-shadow: inherit;
     }
@@ -62,7 +62,7 @@
     border: none;
 
     &.focus {
-      color: var(--color-main-v2);
+      color: var(--color-main-500);
     }
   }
 
