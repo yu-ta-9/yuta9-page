@@ -58,7 +58,7 @@
     transition: all 0.2s ease-in;
 
     &:hover {
-      background-color: var(--color-main-v2);
+      background-color: var(--color-main-500);
     }
   }
 }

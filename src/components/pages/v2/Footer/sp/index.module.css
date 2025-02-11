@@ -4,7 +4,7 @@
   width: 100%;
   padding: 64px 16px 32px;
   overflow: hidden;
-  background-color: var(--color-base-secondary);
+  background-color: var(--color-base-primary-950);
 
   > .left {
     display: flex;

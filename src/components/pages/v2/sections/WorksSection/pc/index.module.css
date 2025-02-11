@@ -1,6 +1,6 @@
 @keyframes active-item {
   from {
-    background-color: var(--color-main-v2);
+    background-color: var(--color-main-500);
   }
 
   to {
@@ -38,7 +38,7 @@
       height: 16px;
       margin-right: 8px;
       content: '';
-      background-color: var(--color-main-v2);
+      background-color: var(--color-main-500);
       border-radius: 50%;
     }
 
@@ -50,7 +50,7 @@
       margin-left: 2px;
       background-color: transparent;
       border-radius: 50%;
-      box-shadow: 0 0 0 2px var(--color-main-v2);
+      box-shadow: 0 0 0 2px var(--color-main-500);
       animation: active-item 0.3s ease-in;
     }
   }
@@ -87,7 +87,7 @@
     width: 4px;
     height: 20px;
     margin: -18px 0 -18px 6px;
-    background-color: var(--color-main-v2);
+    background-color: var(--color-main-500);
   }
 
   > .contents {
