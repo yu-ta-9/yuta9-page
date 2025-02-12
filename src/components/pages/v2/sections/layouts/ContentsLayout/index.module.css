@@ -3,11 +3,11 @@
   display: flex;
   width: 100vw;
   min-height: 480px;
-  padding: 140px 48px;
+  padding: 140px var(--spacing-xl);
 
   @media (--sp-viewport) {
     display: block;
-    padding: 96px 16px;
+    padding: 96px var(--spacing-xs);
   }
 
   &.theme-primary {
@@ -51,7 +51,7 @@
     max-width: 1120px;
 
     @media (--sp-viewport) {
-      margin-top: 40px;
+      margin-top: var(--spacing-xl);
     }
   }
 }

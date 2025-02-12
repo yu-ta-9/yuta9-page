@@ -1,3 +1,15 @@
 :root {
-  --spacing-1: 16px;
+  --spacing-none: 0;
+  --spacing-x3s: 0.25rem;
+  --spacing-xxs: 0.5rem;
+  --spacing-xs: 1rem;
+  --spacing-s: 1.5rem;
+  --spacing-m: 2rem;
+  --spacing-l: 2.5rem;
+  --spacing-xl: 3rem;
+  --spacing-xxl: 4rem;
+  --spacing-x3l: 5rem;
+  --spacing-x4l: 6rem;
+  --spacing-x5l: 8rem;
+  --spacing-x6l: 10rem;
 }

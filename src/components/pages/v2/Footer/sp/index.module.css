@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 64px 16px 32px;
+  padding: var(--spacing-xxl) var(--spacing-xs) var(--spacing-m);
   overflow: hidden;
   background-color: var(--color-base-primary-950);
 
@@ -10,7 +10,7 @@
     display: flex;
     flex: 1 1;
     flex-direction: column;
-    gap: 40px;
+    gap: var(--spacing-xl);
     justify-content: space-between;
   }
 
@@ -24,11 +24,11 @@
   > .left > .wrapper {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: var(--spacing-xs);
   }
 
   > .left > .wrapper > .author {
-    font-size: 16px;
+    font-size: var(--spacing-xs);
     font-weight: 400;
   }
 

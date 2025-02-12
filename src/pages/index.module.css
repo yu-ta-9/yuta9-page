@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 32px;
+  padding: var(--spacing-none) var(--spacing-m);
 
   @media (--sp-viewport) {
-    padding: 0;
+    padding: var(--spacing-none);
   }
 
   > .main {

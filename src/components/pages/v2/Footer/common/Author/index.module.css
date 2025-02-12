@@ -1,6 +1,6 @@
 .author-container {
   display: flex;
-  gap: 16px;
+  gap: var(--spacing-xs);
   align-items: flex-end;
   font-size: 12px;
   font-weight: 400;
@@ -8,13 +8,13 @@
 
   @media (--sp-viewport) {
     flex-direction: column;
-    gap: 8px;
+    gap: var(--spacing-xxs);
     align-items: flex-start;
   }
 
   > .detail {
     display: flex;
-    gap: 8px;
+    gap: var(--spacing-xxs);
     align-items: flex-end;
   }
 

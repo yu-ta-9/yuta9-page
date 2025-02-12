@@ -2,11 +2,11 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: var(--spacing-xxs);
   align-items: center;
   justify-content: space-between;
   width: 325px;
-  padding: 32px 16px;
+  padding: var(--spacing-m) var(--spacing-xs);
   transition: all 0.2s cubic-bezier(0.02, 0.9, 0.87, 0.8);
   transform-origin: center bottom;
 
@@ -59,17 +59,17 @@
   > .contents {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: var(--spacing-xxs);
     justify-content: center;
     width: 100%;
-    padding-bottom: 8px;
+    padding-bottom: var(--spacing-xxs);
     overflow-y: auto;
   }
 
   > .contents > .icon {
     width: 40px;
     height: 40px;
-    padding: 8px;
+    padding: var(--spacing-xxs);
     background-color: var(--color-light-500);
     filter: drop-shadow(2px 4px 2px black);
     border-radius: 9999px;
@@ -81,7 +81,7 @@
   }
 
   > .label {
-    font-size: 16px;
+    font-size: var(--spacing-xs);
     color: var(--color-text);
   }
 }

@@ -1,6 +1,9 @@
 :root {
-  --font-size-h1: 48px;
-  --font-size-h2: 36px;
-  --font-size-h3: 24px;
-  --font-size-normal: 16px;
+  --font-size-xxs: 0.667rem;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.857rem;
+  --font-size-m: 1rem;
+  --font-size-l: 1.2rem;
+  --font-size-xl: 1.5rem;
+  --font-size-xxl: 2rem;
 }

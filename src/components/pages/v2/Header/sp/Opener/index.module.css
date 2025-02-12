@@ -1,7 +1,7 @@
 .opener-container {
   position: fixed;
   top: 36px;
-  right: 16px;
+  right: var(--spacing-xs);
   z-index: var(--z-index-header-menu);
   width: 62px;
   height: 14px;

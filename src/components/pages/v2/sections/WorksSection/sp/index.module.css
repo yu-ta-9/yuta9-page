@@ -32,7 +32,7 @@
       display: inline-block;
       width: 12px;
       height: 12px;
-      margin-right: 8px;
+      margin-right: var(--spacing-xxs);
       margin-left: 2px;
       content: '';
       background-color: transparent;
@@ -42,9 +42,9 @@
 
     &.focus::before {
       display: inline-block;
-      width: 16px;
-      height: 16px;
-      margin-right: 8px;
+      width: var(--spacing-xs);
+      height: var(--spacing-xs);
+      margin-right: var(--spacing-xxs);
       background-color: var(--color-main-500);
       border-radius: 50%;
       box-shadow: inherit;
@@ -75,7 +75,7 @@
   > nav > .navbar > .item > .button > .number {
     position: absolute;
     top: 0;
-    right: -8px;
+    right: -var(--spacing-xxs);
     font-size: 8px;
     font-weight: 700;
   }
@@ -83,7 +83,7 @@
   > .contents {
     /* MEMO: 指定しないとswipeが上手く横幅を定めてくれない */
     min-width: 0;
-    margin-top: 16px;
+    margin-top: var(--spacing-xs);
   }
 
   > .contents > .wrapper {
