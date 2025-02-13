@@ -1,6 +1,6 @@
 import { IconZenn } from '@/components/icons/Zenn';
 import styles from '@/components/pages/v2/sections/ArticlesSection/ArticlesContainer/Article/index.module.css';
-import { formatYYMMDD } from '@/components/utils/date';
+import { formatYYMMDD } from '@/utils/date';
 
 import type { ZennArticle } from '@/@types/zenn';
 import type { FC } from 'react';

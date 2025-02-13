@@ -4,14 +4,14 @@
 
   > .about {
     width: 80%;
-    padding: 74px 100px;
-    margin-top: 120px;
+    padding: var(--spacing-x3l) var(--spacing-x4l);
+    margin-top: var(--spacing-x5l);
     margin-left: auto;
     background: linear-gradient(270deg, rgb(1 255 118 / 72%) 0%, rgb(1 255 118 / 0%) 100%);
 
     @media (--sp-viewport) {
       width: 100%;
-      padding: 32px;
+      padding: var(--spacing-m);
       margin-top: 192px;
     }
   }
@@ -31,24 +31,24 @@
   }
 
   > .about > .description {
-    margin-top: 8px;
+    margin-top: var(--spacing-xxs);
     font-size: 18px;
     font-weight: 400;
     line-height: 26px;
     white-space: pre-wrap;
 
     @media (--sp-viewport) {
-      font-size: 16px;
+      font-size: var(--spacing-xs);
       line-height: 23px;
     }
   }
 
   > .about > .links {
     display: flex;
-    gap: 16px;
+    gap: var(--spacing-xs);
     align-items: center;
     justify-content: flex-end;
-    margin-top: 16px;
+    margin-top: var(--spacing-xs);
   }
 
   > .image {
@@ -64,8 +64,8 @@
 
   > .dummy {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: var(--spacing-none);
+    left: var(--spacing-none);
     z-index: var(--z-index-about-image) + 5;
     width: 300px;
     height: 210px;
@@ -75,7 +75,7 @@
 }
 
 .certification-wrapper {
-  margin-top: 37px;
+  margin-top: var(--spacing-m);
 
   > .title {
     font-family: var(--font-family-menu);
@@ -84,21 +84,21 @@
     font-style: normal;
     font-weight: 500;
     line-height: 32px;
-    color: #fff;
+    color: var(--color-text);
   }
 
   > .list {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    margin-top: 16px;
+    gap: var(--spacing-xs);
+    margin-top: var(--spacing-xs);
   }
 
   > .list > .item {
-    padding-bottom: 8px;
+    padding-bottom: var(--spacing-xxs);
     font-size: 18px;
     font-weight: 400;
     line-height: 26px;
-    border-bottom: 1px solid var(--color-main-v2);
+    border-bottom: 1px solid var(--color-main-500);
   }
 }

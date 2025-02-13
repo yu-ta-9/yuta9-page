@@ -18,7 +18,6 @@ module.exports = {
   rules: {
     '@next/next/no-img-element': 'off', // next/imageを使用できないことでimgタグを使用したいので`off`にする
     'import/no-default-export': 'error',
-    'newline-before-return': 'error',
     'unused-imports/no-unused-imports': 'error',
     'unused-imports/no-unused-vars': [
       'error',
@@ -29,7 +28,6 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'error',
     '@typescript-eslint/consistent-type-imports': 'error',
-    '@typescript-eslint/explicit-function-return-type': 'error', // 関数の返り値に型を付与しないとエラーになるように設定
     '@typescript-eslint/consistent-type-definitions': ['error', 'type'], // interface ではなく type を使用しないとエラーになるように設定
     '@typescript-eslint/ban-types': [
       'error',

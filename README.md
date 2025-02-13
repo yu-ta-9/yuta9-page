@@ -9,3 +9,9 @@ My homepage app.
 - CSS Modules
 - pnpm 8.x
 - Vercel for hosting
+
+## Getting started
+
+```shell
+& pnpm dev
+```

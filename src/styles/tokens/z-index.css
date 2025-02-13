@@ -1,0 +1,7 @@
+:root {
+  --z-index-header-menu: 1000;
+  --z-index-header-menu-contents: 995;
+  --z-index-header-menu-overlay: 990;
+  --z-index-about-contents: 10;
+  --z-index-about-image: 15;
+}

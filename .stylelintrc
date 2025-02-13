@@ -20,5 +20,6 @@
         "ignoreAtRules": ["include"]
       }
     ]
-  }
+  },
+  "unit-disallowed-list": ["px"]
 }

@@ -4,7 +4,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 import '@/styles/global.css';
-import '@/styles/variables.css';
+import '@/styles/tokens/index.css';
 
 import { appWithTranslation } from 'next-i18next';
 

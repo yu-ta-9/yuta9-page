@@ -35,7 +35,6 @@ export const WorksSectionPc: FC = () => {
 
   return (
     <div className={styles.sectionWorks}>
-      {/* TODO: refactor */}
       <nav aria-label={t('works.navigation.label') || ''}>
         <ul className={styles.navbar}>
           <li className={classNames(styles.item, { [styles.focus]: activeMenu === 'work' })}>
@@ -45,16 +44,12 @@ export const WorksSectionPc: FC = () => {
             </button>
           </li>
 
-          <div className={styles.connector}></div>
-
           <li className={classNames(styles.item, { [styles.focus]: activeMenu === 'music' })}>
             <button type='button' className={styles.button} onClick={(): void => handleSelectMenu('music')}>
               <span className={styles.label}>Music</span>
               <span className={styles.number}>{musicData?.length}</span>
             </button>
           </li>
-
-          <div className={styles.connector}></div>
 
           <li className={classNames(styles.item, { [styles.focus]: activeMenu === 'photo' })}>
             <button type='button' className={styles.button} onClick={(): void => handleSelectMenu('photo')}>

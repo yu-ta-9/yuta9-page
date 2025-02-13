@@ -3,19 +3,19 @@
   display: flex;
   width: 100vw;
   min-height: 480px;
-  padding: 140px 48px;
+  padding: 140px var(--spacing-xl);
 
   @media (--sp-viewport) {
     display: block;
-    padding: 96px 16px;
+    padding: 96px var(--spacing-xs);
   }
 
   &.theme-primary {
-    background-color: var(--color-base-primary);
+    background-color: var(--color-background-primary);
   }
 
   &.theme-secondary {
-    background-color: #3a3a3a;
+    background-color: var(--color-background-secondary);
   }
 
   > .wrapper {
@@ -51,7 +51,7 @@
     max-width: 1120px;
 
     @media (--sp-viewport) {
-      margin-top: 40px;
+      margin-top: var(--spacing-xl);
     }
   }
 }

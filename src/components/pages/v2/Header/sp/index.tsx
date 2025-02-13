@@ -22,8 +22,8 @@ export const HeaderSp: FC = () => {
       <Opener isOpen={isOpen} onToggleOpen={toggleOpen} />
       {isOpen && (
         <>
-          <Contents />
-          <div className={styles.overlayContainer} onClick={closeOpen}></div>
+          <Contents onHeaderClose={closeOpen} />
+          <div className={styles.overlayContainer} onClick={closeOpen} />
         </>
       )}
     </>
