@@ -1,28 +1,40 @@
 :root {
   /* 0px */
   --spacing-none: 0;
+
   /* 4px */
   --spacing-x3s: 0.25rem;
+
   /* 8px */
   --spacing-xxs: 0.5rem;
+
   /* 16px */
   --spacing-xs: 1rem;
+
   /* 24px */
   --spacing-s: 1.5rem;
+
   /* 32px */
   --spacing-m: 2rem;
+
   /* 40px */
   --spacing-l: 2.5rem;
+
   /* 48px */
   --spacing-xl: 3rem;
+
   /* 64px */
   --spacing-xxl: 4rem;
+
   /* 80px */
   --spacing-x3l: 5rem;
+
   /* 96px */
   --spacing-x4l: 6rem;
+
   /* 128px */
   --spacing-x5l: 8rem;
+
   /* 160px */
   --spacing-x6l: 10rem;
 }
