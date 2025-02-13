@@ -31,8 +31,8 @@
   > .description {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    margin-top: 16px;
+    gap: var(--spacing-xxs);
+    margin-top: var(--spacing-xs);
     text-align: start;
     white-space: pre-wrap;
   }

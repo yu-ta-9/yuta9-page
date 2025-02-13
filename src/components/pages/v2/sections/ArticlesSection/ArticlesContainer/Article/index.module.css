@@ -19,8 +19,8 @@
 
     > .logo {
       position: absolute;
-      top: 16px;
-      left: 16px;
+      top: var(--spacing-xs);
+      left: var(--spacing-xs);
     }
 
     > .emoji {
@@ -33,7 +33,7 @@
     flex: 1;
     flex-direction: column;
     gap: 4px;
-    padding: 16px;
+    padding: var(--spacing-xs);
     line-height: 23px;
 
     > .title {
@@ -42,7 +42,7 @@
 
     > .meta {
       display: flex;
-      gap: 8px;
+      gap: var(--spacing-xxs);
       align-items: center;
       font-size: 14px;
       color: var(--color-text);

@@ -5,7 +5,7 @@
     right: 62px;
     z-index: var(--z-index-header-menu);
     display: flex;
-    gap: 32px;
+    gap: var(--spacing-m);
     align-items: center;
 
     > .list > .text {

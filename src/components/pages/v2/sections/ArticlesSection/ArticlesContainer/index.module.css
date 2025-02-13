@@ -2,11 +2,11 @@
   > .article-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 16px;
+    grid-gap: var(--spacing-xs);
 
     @media (--sp-viewport) {
       grid-template-columns: repeat(1, 1fr);
-      grid-gap: 16px;
+      grid-gap: var(--spacing-xs);
     }
 
     > .article {
@@ -17,7 +17,7 @@
   }
 
   > .description {
-    margin-bottom: 16px;
+    margin-bottom: var(--spacing-xs);
     font-size: 18px;
   }
 

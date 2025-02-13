@@ -25,18 +25,19 @@
   > nav > .navbar {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: var(--spacing-xs);
   }
 
   > nav > .navbar > .item {
+    position: relative;
     display: flex;
+    gap: var(--spacing-xxs);
     align-items: center;
 
     &::before {
       display: inline-block;
       width: 16px;
       height: 16px;
-      margin-right: 8px;
       content: '';
       background-color: var(--color-main-500);
       border-radius: 50%;
@@ -44,14 +45,29 @@
 
     &.focus::before {
       display: inline-block;
-      width: 12px;
-      height: 12px;
-      margin-right: 10px;
-      margin-left: 2px;
+      width: 14px;
+      height: 14px;
+      margin-right: 1px;
+      margin-left: 1px;
       background-color: transparent;
       border-radius: 50%;
       box-shadow: 0 0 0 2px var(--color-main-500);
       animation: active-item 0.3s ease-in;
+    }
+
+    &:not(:last-child)::after {
+      position: absolute;
+
+      /* NOTE: 微調整 */
+      top: calc(100% - 1px);
+      left: 6px;
+      display: block;
+      width: 4px;
+
+      /* NOTE: 微調整 */
+      height: calc(var(--spacing-xs) + 3px);
+      content: '';
+      background-color: var(--color-main-500);
     }
   }
 
@@ -60,7 +76,7 @@
     display: flex;
     align-items: center;
     padding: 0;
-    font-size: 16px;
+    font-size: var(--spacing-xs);
     color: var(--color-text);
     cursor: pointer;
     background-color: transparent;
@@ -77,8 +93,8 @@
 
   > nav > .navbar > .item > .button > .number {
     position: absolute;
-    top: -8px;
-    right: -8px;
+    top: calc(-1 * var(--spacing-xxs));
+    right: calc(-1 * var(--spacing-xxs));
     font-size: 12px;
   }
 
@@ -86,7 +102,7 @@
     display: block;
     width: 4px;
     height: 20px;
-    margin: -18px 0 -18px 6px;
+    margin: calc(-1 * var(--spacing-xs)) var(--spacing-none) calc(-1 * var(--spacing-xs)) var(--spacing-x3s);
     background-color: var(--color-main-500);
   }
 
