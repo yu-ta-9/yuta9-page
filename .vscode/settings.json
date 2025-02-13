@@ -7,9 +7,9 @@
   "typescript.inlayHints.parameterNames.enabled": "all",
   "typescript.preferences.importModuleSpecifier": "non-relative",
   "editor.codeActionsOnSave": {
-    "source.addMissingImports": "explicit",
-    "source.fixAll.eslint": "explicit",
-    "source.fixAll.stylelint": "explicit"
+    "source.addMissingImports": "always",
+    "source.fixAll.eslint": "always",
+    "source.fixAll.stylelint": "always"
   },
   "stylelint.validate": ["css", "scss"],
   "[javascriptreact]": {
@@ -47,5 +47,6 @@
     "commandCenter.border": "#15202b99"
   },
   "i18n-ally.localesPaths": ["public/locales"],
-  "i18n-ally.keystyle": "nested"
+  "i18n-ally.keystyle": "nested",
+  "biome.enabled": false
 }
