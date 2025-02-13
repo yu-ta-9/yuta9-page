@@ -7,7 +7,7 @@ type UseOutsideClickArgs = {
 };
 
 type UseOutsideClickReturns<T> = {
-  ref: RefObject<T>;
+  ref: RefObject<T | null>;
 };
 
 export const useOutsideClick = <T extends Node>({ onOutSideClick }: UseOutsideClickArgs): UseOutsideClickReturns<T> => {
