@@ -7,19 +7,24 @@ import { HomeContext } from '@/contexts/HomeContext';
 
 import type { ZennArticle } from '@/@types/zenn';
 import type { GetStaticProps, NextPage } from 'next';
+import type { Data } from '@/@types/data';
 
 const DynamicV2 = dynamic(() => import('@/components/pages/v2').then((module) => module.V2), { ssr: false });
 
 type Props = {
-  zennArticles: ZennArticle[];
+  data: {
+    zenn: ZennArticle[];
+    works: Data[];
+    musics: Data[];
+  };
 };
 
-const Home: NextPage<Props> = ({ zennArticles }) => {
+const Home: NextPage<Props> = ({ data }) => {
   return (
     <>
       <HeadTemplate />
 
-      <HomeContext.Provider value={{ zennArticles }}>
+      <HomeContext.Provider value={{ data }}>
         <DynamicV2 />
       </HomeContext.Provider>
     </>
@@ -29,16 +34,31 @@ const Home: NextPage<Props> = ({ zennArticles }) => {
 // eslint-disable-next-line import/no-default-export
 export default withTranslation('common')(Home);
 
-export const getStaticProps: GetStaticProps = async ({ locale }) => {
+export const getStaticProps: GetStaticProps<Props> = async ({ locale }) => {
   const zennArticlesRes = await fetch('https://zenn.dev/api/articles?username=yu_ta_9&order=latest');
   // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   const zennArticlesJson = await zennArticlesRes.json();
 
+  const { default: works } = (await import(`/data/${locale || 'ja'}/works.json`, {
+    assert: {
+      type: 'json',
+    },
+  })) as { default: Data[] };
+  const { default: musics } = (await import(`/data/${locale || 'ja'}/musics.json`, {
+    assert: {
+      type: 'json',
+    },
+  })) as { default: Data[] };
+
   return {
     props: {
       ...(await serverSideTranslations(locale || 'ja', ['common'])),
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
-      zennArticles: zennArticlesJson.articles,
+      data: {
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
+        zenn: zennArticlesJson.articles,
+        works,
+        musics,
+      },
     },
     revalidate: 3600,
   };

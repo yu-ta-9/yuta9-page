@@ -3,8 +3,6 @@ import styles from '@/components/pages/v2/sections/TopSection/index.module.css';
 import type { FC } from 'react';
 
 export const TopSection: FC = () => {
-  console.log('styles:', styles);
-
   return (
     <section className={styles.sectionTop}>
       <video className={styles.video} src='/videos/sample_video.mp4' autoPlay loop muted></video>

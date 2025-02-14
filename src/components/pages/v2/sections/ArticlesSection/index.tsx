@@ -8,16 +8,18 @@ import { useHomeContext } from '@/hooks/useHomeContext';
 export const ArticlesSection: FC = () => {
   const { t } = useTranslation('common');
 
-  const { zennArticles } = useHomeContext();
+  const {
+    data: { zenn },
+  } = useHomeContext();
 
-  const recentZennArticles = useMemo(() => zennArticles.slice(0, 3), [zennArticles]);
+  const recentZennArticles = useMemo(() => zenn.slice(0, 3), [zenn]);
   const moreLikedZennArticles = useMemo(
     () =>
-      zennArticles
+      zenn
         .filter((zennArticle) => zennArticle.liked_count > 0)
         .sort((a, b) => (a.liked_count > b.liked_count ? -1 : 1))
         .slice(0, 3),
-    [zennArticles],
+    [zenn],
   );
 
   return (
