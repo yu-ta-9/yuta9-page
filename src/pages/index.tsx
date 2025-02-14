@@ -26,15 +26,18 @@ const Home: NextPage<Props> = ({ zennArticles }) => {
   );
 };
 
+// eslint-disable-next-line import/no-default-export
 export default withTranslation('common')(Home);
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const zennArticlesRes = await fetch('https://zenn.dev/api/articles?username=yu_ta_9&order=latest');
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   const zennArticlesJson = await zennArticlesRes.json();
 
   return {
     props: {
       ...(await serverSideTranslations(locale || 'ja', ['common'])),
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
       zennArticles: zennArticlesJson.articles,
     },
     revalidate: 3600,

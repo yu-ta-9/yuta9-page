@@ -20,10 +20,14 @@ export const WorksSectionSp: FC = () => {
   const [musicData, setMusicData] = useState<Data[]>();
 
   useEffect(() => {
-    (async (): Promise<void> => {
+    void (async (): Promise<void> => {
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       const workData = await import(`../../../../../../../data/${locale || 'ja'}/works.json`);
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       const musicData = await import(`../../../../../../../data/${locale || 'ja'}/musics.json`);
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-unsafe-member-access
       setWorkData(workData.default);
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-unsafe-member-access
       setMusicData(musicData.default);
     })();
   }, [locale]);
@@ -34,12 +38,10 @@ export const WorksSectionSp: FC = () => {
 
   return (
     <div className={styles.sectionWorks}>
-      {/* TODO: refactor */}
       <nav aria-label={t('works.navigation.label') || ''}>
         <ul className={styles.navbar}>
           <li
             className={classNames(styles.item, { [styles.focus]: activeMenu === 'work' })}
-            role='button'
             onClick={(): void => handleSelectMenu('work')}
           >
             <button

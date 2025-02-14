@@ -2,12 +2,12 @@ import classNames from 'classnames';
 
 import styles from '@/components/pages/v2/sections/layouts/ContentsLayout/index.module.css';
 
-import type { FC } from 'react';
+import type { FC, ReactNode } from 'react';
 
 type Props = {
   id: string;
   heading: string;
-  children: JSX.Element;
+  children: ReactNode;
   theme: 'primary' | 'secondary';
 };
 

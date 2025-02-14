@@ -75,8 +75,8 @@
   > nav > .navbar > .item > .button > .number {
     position: absolute;
     top: 0;
-    right: -var(--spacing-xxs);
-    font-size: 8px;
+    right: calc(-1 * var(--spacing-xxs));
+    font-size: var(--font-size-xs);
     font-weight: 700;
   }
 
