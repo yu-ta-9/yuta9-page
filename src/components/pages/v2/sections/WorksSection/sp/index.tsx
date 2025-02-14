@@ -1,36 +1,22 @@
 import classNames from 'classnames';
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import styles from '@/components/pages/v2/sections/WorksSection/sp/index.module.css';
 import { SliderSp } from '@/components/pages/v2/sections/WorksSection/sp/Slider';
 
-import type { Data } from '@/@types/data';
 import type { FC } from 'react';
+import { useHomeContext } from '@/hooks/useHomeContext';
 
 type Menu = 'work' | 'music' | 'photo';
 
 export const WorksSectionSp: FC = () => {
-  const { locale } = useRouter();
   const { t } = useTranslation('common');
+  const {
+    data: { works, musics },
+  } = useHomeContext();
 
   const [activeMenu, setActiveMenu] = useState<Menu>('work');
-  const [workData, setWorkData] = useState<Data[]>();
-  const [musicData, setMusicData] = useState<Data[]>();
-
-  useEffect(() => {
-    void (async (): Promise<void> => {
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-      const workData = await import(`../../../../../../../data/${locale || 'ja'}/works.json`);
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-      const musicData = await import(`../../../../../../../data/${locale || 'ja'}/musics.json`);
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-unsafe-member-access
-      setWorkData(workData.default);
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-unsafe-member-access
-      setMusicData(musicData.default);
-    })();
-  }, [locale]);
 
   const handleSelectMenu = (menu: Menu): void => {
     setActiveMenu(menu);
@@ -49,7 +35,7 @@ export const WorksSectionSp: FC = () => {
               onClick={(): void => handleSelectMenu('work')}
             >
               <span className={styles.label}>Works</span>
-              <span className={styles.number}>{workData?.length}</span>
+              <span className={styles.number}>{works.length}</span>
             </button>
           </li>
 
@@ -59,7 +45,7 @@ export const WorksSectionSp: FC = () => {
               onClick={(): void => handleSelectMenu('music')}
             >
               <span className={styles.label}>Music</span>
-              <span className={styles.number}>{musicData?.length}</span>
+              <span className={styles.number}>{musics.length}</span>
             </button>
           </li>
 
@@ -77,11 +63,11 @@ export const WorksSectionSp: FC = () => {
 
       <div className={styles.contents}>
         <div className={classNames(styles.wrapper, { [styles.show]: activeMenu === 'work' })}>
-          {workData && <SliderSp id='works' data={workData} />}
+          <SliderSp id='works' data={works} />
         </div>
 
         <div className={classNames(styles.wrapper, { [styles.show]: activeMenu === 'music' })}>
-          {musicData && <SliderSp id='musics' data={musicData} />}
+          <SliderSp id='musics' data={musics} />
         </div>
 
         <div className={classNames(styles.wrapper, { [styles.show]: activeMenu === 'photo' })}>
