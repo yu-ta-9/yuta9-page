@@ -33,3 +33,4 @@
 
 # my custom
 *.css.d.ts
+*.css.d.ts.map

@@ -19,7 +19,7 @@ const compat = new FlatCompat({
 
 export default [
   {
-    ignores: ['dist/**', '**/*.mjs', '**/*.js'],
+    ignores: ['dist/**', '**/*.mjs', '**/*.js', '**/*.css.d.ts', '**/*.css.d.ts.map'],
   },
   eslint.configs.recommended,
   ...tseslint.configs.recommendedTypeChecked,
@@ -49,18 +49,18 @@ export default [
       },
     },
     settings: {
-      // 'import/resolver': {
-      //   node: {
-      //     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
-      //   },
-      //   typescript: {
-      //     alwaysTryTypes: true,
-      //     config: 'tsconfig.json',
-      //   },
-      // },
-      // react: {
-      //   version: 'detect',
-      // },
+      'import/resolver': {
+        node: {
+          extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
+        },
+        typescript: {
+          alwaysTryTypes: true,
+          config: 'tsconfig.json',
+        },
+      },
+      react: {
+        version: 'detect',
+      },
     },
     rules: {
       '@next/next/no-img-element': 'off',
@@ -81,61 +81,6 @@ export default [
       '@typescript-eslint/explicit-module-boundary-types': 'error',
       '@typescript-eslint/consistent-type-imports': 'error',
       '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
-      // 'import/order': [
-      //   'error',
-      //   {
-      //     alphabetize: {
-      //       caseInsensitive: true,
-      //       order: 'asc',
-      //     },
-
-      //     groups: ['builtin', 'external', 'internal', 'index', 'type', 'sibling', 'parent'],
-      //     'newlines-between': 'always',
-
-      //     pathGroups: [
-      //       {
-      //         group: 'internal',
-      //         pattern: 'src/components/**',
-      //         position: 'before',
-      //       },
-      //       {
-      //         group: 'internal',
-      //         pattern: 'src/constants',
-      //         position: 'before',
-      //       },
-      //       {
-      //         group: 'internal',
-      //         pattern: 'src/hooks/**',
-      //         position: 'before',
-      //       },
-      //       {
-      //         group: 'internal',
-      //         pattern: 'src/lib/**',
-      //         position: 'before',
-      //       },
-      //       {
-      //         group: 'internal',
-      //         pattern: 'src/provider/**',
-      //         position: 'before',
-      //       },
-      //       {
-      //         group: 'internal',
-      //         pattern: 'src/stores/**',
-      //         position: 'before',
-      //       },
-      //       {
-      //         group: 'internal',
-      //         pattern: 'src/styles/**',
-      //         position: 'before',
-      //       },
-      //       {
-      //         group: 'internal',
-      //         pattern: 'src/utils/**',
-      //         position: 'before',
-      //       },
-      //     ],
-      //   },
-      // ],
     },
   },
 ];
