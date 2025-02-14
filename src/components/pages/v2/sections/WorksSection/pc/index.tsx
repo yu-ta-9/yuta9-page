@@ -21,10 +21,14 @@ export const WorksSectionPc: FC = () => {
   const [musicData, setMusicData] = useState<Data[]>();
 
   useEffect(() => {
-    (async (): Promise<void> => {
+    void (async (): Promise<void> => {
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       const workData = await import(`../../../../../../../data/${locale || 'ja'}/works.json`);
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       const musicData = await import(`../../../../../../../data/${locale || 'ja'}/musics.json`);
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-unsafe-member-access
       setWorkData(workData.default);
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-unsafe-member-access
       setMusicData(musicData.default);
     })();
   }, [locale]);

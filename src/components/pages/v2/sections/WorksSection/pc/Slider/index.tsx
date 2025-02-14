@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { memo, useState } from 'react';
+import { useState } from 'react';
 import { Keyboard, Pagination, Navigation, Autoplay } from 'swiper';
 import { Mousewheel } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -14,7 +14,7 @@ type Props = {
   data: Data[];
 };
 
-const _SliderPc: FC<Props> = ({ id, data }) => {
+export const SliderPc: FC<Props> = ({ id, data }) => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
   return (
@@ -63,5 +63,3 @@ const _SliderPc: FC<Props> = ({ id, data }) => {
     </Swiper>
   );
 };
-
-export const SliderPc = memo(_SliderPc);

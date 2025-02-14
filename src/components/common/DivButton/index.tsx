@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { memo, useCallback } from 'react';
+import { useCallback } from 'react';
 
 import styles from '@/components/common/DivButton/index.module.css';
 
@@ -11,7 +11,7 @@ type Props = {
   onClick: () => void;
 } & ComponentProps<'div'>;
 
-const _DivButton: FC<Props> = ({ children, tabIndex = 0, onClick, ...divProps }) => {
+export const DivButton: FC<Props> = ({ children, tabIndex = 0, onClick, ...divProps }) => {
   const handleKeyDown = useCallback(
     (e: React.KeyboardEvent<HTMLDivElement>): void => {
       if (e.key === 'Enter' || e.key === ' ') {
@@ -35,5 +35,3 @@ const _DivButton: FC<Props> = ({ children, tabIndex = 0, onClick, ...divProps })
     </div>
   );
 };
-
-export const DivButton = memo(_DivButton);

@@ -15,4 +15,5 @@ export const App = ({ Component, pageProps }: AppProps): ReactNode => {
   return <Component {...pageProps} />;
 };
 
+// eslint-disable-next-line import/no-default-export
 export default appWithTranslation(App);
