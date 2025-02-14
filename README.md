@@ -13,5 +13,5 @@ My homepage app.
 ## Getting started
 
 ```shell
-& pnpm dev
+$ pnpm dev
 ```
