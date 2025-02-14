@@ -1,6 +1,6 @@
-@import 'color.css';
-@import 'font-family.css';
-@import 'font-size.css';
-@import 'font-weight.css';
-@import 'spacing.css';
-@import 'z-index.css';
+@import url('color.css');
+@import url('font-family.css');
+@import url('font-size.css');
+@import url('font-weight.css');
+@import url('spacing.css');
+@import url('z-index.css');

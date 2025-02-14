@@ -7,19 +7,22 @@
   "typescript.inlayHints.parameterNames.enabled": "all",
   "typescript.preferences.importModuleSpecifier": "non-relative",
   "editor.codeActionsOnSave": {
-    "source.addMissingImports": "always",
-    "source.fixAll.eslint": "always",
-    "source.fixAll.stylelint": "always"
+    "source.fixAll": "explicit",
+    "source.addMissingImports": "explicit"
   },
-  "stylelint.validate": ["css", "scss"],
+  "stylelint.validate": ["css", "postcss"],
+  "stylelint.snippet": ["css", "postcss"],
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[css]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
   "[markdown]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true
   },
   "search.exclude": {
     "**/node_modules": true
