@@ -1,4 +1,4 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const { i18n } = require('./next-i18next.config');
 
 /** @type {import('next').NextConfig} */
@@ -9,7 +9,6 @@ const nextConfig = {
     domains: ['images.microcms-assets.io'],
   },
   // MEMO: CSS Modulesのクラス名をキャメルケースにする
-  // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
   webpack: (config) => {
     config.module.rules
       .find(({ oneOf }) => !!oneOf)

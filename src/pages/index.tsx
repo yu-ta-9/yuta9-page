@@ -36,7 +36,7 @@ export default withTranslation('common')(Home);
 
 export const getStaticProps: GetStaticProps<Props> = async ({ locale }) => {
   const zennArticlesRes = await fetch('https://zenn.dev/api/articles?username=yu_ta_9&order=latest');
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+
   const zennArticlesJson = await zennArticlesRes.json();
 
   const { default: works } = (await import(`/data/${locale || 'ja'}/works.json`, {
@@ -54,7 +54,6 @@ export const getStaticProps: GetStaticProps<Props> = async ({ locale }) => {
     props: {
       ...(await serverSideTranslations(locale || 'ja', ['common'])),
       data: {
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
         zenn: zennArticlesJson.articles,
         works,
         musics,
