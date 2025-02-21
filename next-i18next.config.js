@@ -3,6 +3,6 @@ module.exports = {
     locales: ['ja', 'en'],
     defaultLocale: 'ja',
   },
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
   localePath: require('path').resolve('./public/locales'),
 };
